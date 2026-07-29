@@ -1,0 +1,39 @@
+import Layout from "@/components/layout/Layout";
+import Seo from "@/components/layout/Seo";
+import Hero from "@/components/Hero";
+import Services from "@/components/Services";
+import WhyChoose from "@/components/WhyChoose";
+import Gallery from "@/components/Gallery";
+import VideoShowcase from "@/components/VideoShowcase";
+import WhereEpoxyWorks from "@/components/WhereEpoxyWorks";
+import Process from "@/components/Process";
+import Benefits from "@/components/Benefits";
+import Testimonials from "@/components/Testimonials";
+import ServiceAreas from "@/components/ServiceAreas";
+import FAQ from "@/components/FAQ";
+import AboutPreview from "@/components/AboutPreview";
+import CTA from "@/components/CTA";
+import { localBusinessSchema, servicesSchema, faqSchema } from "@/lib/schema";
+
+export default function Home() {
+  const jsonLd = [localBusinessSchema, servicesSchema, faqSchema];
+
+  return (
+    <Layout>
+      <Seo path="/" jsonLd={jsonLd} />
+      <Hero />
+      <Services />
+      <WhyChoose />
+      <Gallery />
+      <VideoShowcase />
+      <WhereEpoxyWorks />
+      <Process />
+      <Benefits />
+      <Testimonials />
+      <ServiceAreas />
+      <FAQ />
+      <AboutPreview />
+      <CTA />
+    </Layout>
+  );
+}

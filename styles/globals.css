@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gold: #d4af37;
+  --gold-soft: #f4e3b2;
+  --font-jakarta: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-inter: "Inter", system-ui, sans-serif;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-base text-white font-body antialiased;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(212, 175, 55, 0.28);
+  color: #fff;
+}
+
+/* Gold scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0e13;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #d4af37, #8a6f1e);
+  border-radius: 999px;
+  border: 2px solid #0b0e13;
+}
+
+@layer components {
+  /* Glass surfaces */
+  .glass {
+    @apply bg-white/[0.03] backdrop-blur-xl border border-hair;
+  }
+  .glass-strong {
+    @apply bg-white/[0.05] backdrop-blur-2xl border border-hair;
+  }
+
+  /* Accent text — gold gradient (used by Heading `highlight`) */
+  .hl,
+  .text-gold-gradient {
+    background: linear-gradient(180deg, #f4e3b2 0%, #d4af37 60%, #b4922a 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Signature thin gold divider */
+  .gold-divider {
+    height: 1px;
+    background-image: linear-gradient(
+      90deg,
+      rgba(212, 175, 55, 0) 0%,
+      rgba(212, 175, 55, 0.7) 50%,
+      rgba(212, 175, 55, 0) 100%
+    );
+  }
+}
+
+@layer utilities {
+  .section-pad {
+    @apply py-12 md:py-16 lg:py-20;
+  }
+  .container-x {
+    @apply mx-auto w-full max-w-container px-5 sm:px-8 lg:px-10 xl:px-12;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
