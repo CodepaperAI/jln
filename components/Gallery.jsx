@@ -23,7 +23,7 @@ export default function Gallery({ limit = 5 }) {
             eyebrow="Our Work"
             title="Before & After Transformations"
             highlight="Transformations"
-           
+            subtitle="From worn-out concrete to high-gloss, premium flooring — see how a properly installed epoxy system changes how a space looks, feels, and functions."
             className="max-w-2xl"
           />
           <Button href="/gallery" variant="secondary" className="shrink-0">

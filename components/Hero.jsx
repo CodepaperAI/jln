@@ -10,7 +10,6 @@ import { site } from "@/data/siteData";
 
 const chips = [
   { icon: FiAward, label: "5+ Years Experience" },
-  { icon: FiUser, label: `Owner-Led by ${site.owner}` },
   { icon: FiMapPin, label: "Serving Ontario" },
 ];
 

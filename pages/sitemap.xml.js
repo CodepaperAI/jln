@@ -1,10 +1,15 @@
 import { site } from "@/data/siteData";
 import { detailSlugs } from "@/data/serviceDetails";
+import { locationSlugs } from "@/data/locationsData";
 
-const staticRoutes = ["", "/services", "/gallery", "/about", "/contact", "/privacy", "/terms"];
+const staticRoutes = ["", "/services", "/gallery", "/about", "/contact", "/epoxy-flooring-cost", "/locations", "/privacy", "/terms"];
 
 // Published service detail pages are added automatically.
-const routes = [...staticRoutes, ...detailSlugs.map((slug) => `/services/${slug}`)];
+const routes = [
+  ...staticRoutes,
+  ...detailSlugs.map((slug) => `/services/${slug}`),
+  ...locationSlugs.map((slug) => `/locations/${slug}`),
+];
 
 function generate() {
   const today = new Date().toISOString().split("T")[0];

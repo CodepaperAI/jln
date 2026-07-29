@@ -77,12 +77,9 @@ export default function ServicesPage() {
                     ))}
                   </ul>
                   <div className="mt-8 flex flex-wrap gap-4">
-                    {hasDetailPage(service.slug) && (
-                      <Button href={serviceHref(service.slug)}>
-                        View Details <FiArrowRight />
-                      </Button>
-                    )}
-                  
+                    <Button href={serviceHref(service.slug)}>
+                      View Details <FiArrowRight />
+                    </Button>
                   </div>
                 </div>
               </div>

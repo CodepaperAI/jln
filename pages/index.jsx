@@ -20,7 +20,12 @@ export default function Home() {
 
   return (
     <Layout>
-      <Seo path="/" jsonLd={jsonLd} />
+      <Seo
+        title="Epoxy Flooring Toronto & GTA | Garage, Metallic & Commercial"
+        description="Premium epoxy flooring in Toronto & the GTA — garage, flake, metallic, commercial floors & concrete polishing, installed with proper prep. Free quote."
+        path="/"
+        jsonLd={jsonLd}
+      />
       <Hero />
       <Services />
       <WhyChoose />

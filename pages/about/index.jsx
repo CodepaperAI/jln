@@ -25,7 +25,7 @@ export default function AboutPage() {
     <Layout>
       <Seo
         title="About"
-        description="J & L Epoxy is an Ontario-based epoxy flooring company led by Leo, with 5+ years of hands-on experience."
+        description="JNL Epoxy is an Ontario-based epoxy flooring company led by Leo, with 5+ years of hands-on experience."
         path="/about"
         jsonLd={breadcrumbSchema([
           { name: "Home", path: "/" },
@@ -33,8 +33,8 @@ export default function AboutPage() {
         ])}
       />
       <PageHeader
-        title="About J & L Epoxy"
-        highlight="J & L Epoxy"
+        title="About JNL Epoxy"
+        highlight="JNL Epoxy"
         subtitle="An Ontario-based epoxy flooring company built on preparation, quality materials, and owner-led attention to detail."
         crumbs={[{ name: "About", path: "/about" }]}
       />
@@ -57,7 +57,7 @@ export default function AboutPage() {
               Owner-led craft, <span className="hl">start to finish</span>
             </h2>
             <p className="mt-5 text-base leading-relaxed text-muted">
-              J & L Epoxy is led by {site.owner}, who brings over 5 years of hands-on
+              JNL Epoxy is led by {site.owner}, who brings over 5 years of hands-on
               experience in residential and commercial flooring. Our focus is simple:
               proper surface preparation, quality materials, clean workmanship, and floors
               that look impressive while standing up to everyday use.

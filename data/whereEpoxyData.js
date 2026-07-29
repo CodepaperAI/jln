@@ -1,6 +1,6 @@
 import { FiTruck, FiHome, FiPackage, FiShoppingBag, FiStar, FiBriefcase } from "react-icons/fi";
 
-// "Where Epoxy Works Best" — the spaces J & L Epoxy installs in.
+// "Where Epoxy Works Best" — the spaces JNL Epoxy installs in.
 export const whereEpoxyData = [
   {
     title: "Garages",

@@ -3,11 +3,11 @@
 // service page — the route, SEO, and schema all generate automatically.
 
 const FAQS = [
-  { q: "How much does epoxy flooring cost in Ontario?", a: "The cost depends on the size of the floor, concrete condition, coating system, design finish, and preparation required. A garage with cracks, moisture concerns, or heavy repairs will be priced differently than a clean, ready surface. J & L Epoxy provides project-specific estimates after understanding the space." },
+  { q: "How much does epoxy flooring cost in Ontario?", a: "The cost depends on the size of the floor, concrete condition, coating system, design finish, and preparation required. A garage with cracks, moisture concerns, or heavy repairs will be priced differently than a clean, ready surface. JNL Epoxy provides project-specific estimates after understanding the space." },
   { q: "How long does installation take?", a: "Most residential epoxy projects take 1 to 3 days depending on preparation, coating layers, and cure time. Commercial spaces may require a longer schedule based on square footage and operating requirements." },
   { q: "Is epoxy flooring slippery?", a: "High-gloss floors can become slippery when wet, but traction can be improved with flakes, texture, and slip-resistant additives. We recommend the right finish based on whether the space is a garage, basement, showroom, or commercial floor." },
   { q: "How long does epoxy flooring last?", a: "A properly prepared and installed epoxy floor can last many years. Longevity depends on traffic, maintenance, concrete condition, coating type, and whether the installation was completed with correct grinding and surface preparation." },
-  { q: "Do you handle both residential and commercial projects?", a: "Yes. J & L Epoxy works on garages, basements, retail stores, showrooms, warehouses, offices, and other concrete surfaces across Ontario." },
+  { q: "Do you handle both residential and commercial projects?", a: "Yes. JNL Epoxy works on garages, basements, retail stores, showrooms, warehouses, offices, and other concrete surfaces across Ontario." },
 ];
 
 export const serviceDetails = {
@@ -18,10 +18,10 @@ export const serviceDetails = {
       subtitle:
         "Decorative, slip-resistant, and durable epoxy flooring for garages, basements, and concrete spaces that need a clean modern finish.",
       image: "/images/service-flake.jpg",
-      chips: ["Ontario Service", "Owner-Led by Leo", "Proper Surface Prep"],
+      chips: ["Ontario Service", "Proper Surface Prep"],
     },
     seo: {
-      title: "Flake Epoxy Flooring Ontario",
+      title: "Flake Epoxy Flooring Toronto & GTA",
       description:
         "Decorative, slip-resistant flake epoxy flooring for Ontario garages, basements, and utility spaces. Proper grinding, crack repair, and protective top coats.",
     },
@@ -31,7 +31,7 @@ export const serviceDetails = {
       imageAlt: "Flake epoxy garage floor with a glossy speckled finish",
       paragraphs: [
         "Flake epoxy is one of the most popular flooring systems for Ontario homeowners because it combines durability with a clean decorative look. Vinyl flakes help hide minor imperfections, add texture, and create a premium finish that works especially well in garages and utility spaces.",
-        "At J & L Epoxy, we focus on proper grinding, crack repair, flake broadcast, and protective top coat application so the floor is not only attractive but also practical for daily use.",
+        "At JNL Epoxy, we focus on proper grinding, crack repair, flake broadcast, and protective top coat application so the floor is not only attractive but also practical for daily use.",
       ],
       bullets: [
         "Slip-resistant texture options for safer everyday use",
@@ -65,7 +65,7 @@ export const serviceDetails = {
     process: {
       heading: "Our Process",
       subtitle:
-        "A durable finish starts with preparation, not just coating. J & L Epoxy follows a clear installation process to support long-term performance.",
+        "A durable finish starts with preparation, not just coating. JNL Epoxy follows a clear installation process to support long-term performance.",
       steps: [
         {
           title: "Inspect",
@@ -92,7 +92,7 @@ export const serviceDetails = {
     faqs: [
       {
         q: "How much does epoxy flooring cost in Ontario?",
-        a: "The cost depends on the size of the floor, concrete condition, coating system, design finish, and preparation required. A garage with cracks, moisture concerns, or heavy repairs will be priced differently than a clean, ready surface. J & L Epoxy provides project-specific estimates after understanding the space.",
+        a: "The cost depends on the size of the floor, concrete condition, coating system, design finish, and preparation required. A garage with cracks, moisture concerns, or heavy repairs will be priced differently than a clean, ready surface. JNL Epoxy provides project-specific estimates after understanding the space.",
       },
       {
         q: "How long does installation take?",
@@ -108,7 +108,7 @@ export const serviceDetails = {
       },
       {
         q: "Do you handle both residential and commercial projects?",
-        a: "Yes. J & L Epoxy works on garages, basements, retail stores, showrooms, warehouses, offices, and other concrete surfaces across Ontario.",
+        a: "Yes. JNL Epoxy works on garages, basements, retail stores, showrooms, warehouses, offices, and other concrete surfaces across Ontario.",
       },
     ],
   },
@@ -119,10 +119,10 @@ export const serviceDetails = {
       subtitle:
         "Luxury high-gloss epoxy floors with a fluid marble-inspired look for showrooms, interiors, and premium commercial spaces.",
       image: "/images/service-metallic.jpg",
-      chips: ["Ontario Service", "Owner-Led by Leo", "Proper Surface Prep"],
+      chips: ["Ontario Service", "Proper Surface Prep"],
     },
     seo: {
-      title: "Metallic Epoxy Flooring Ontario",
+      title: "Metallic Epoxy Flooring Toronto & GTA",
       description:
         "Luxury high-gloss metallic epoxy flooring for Ontario showrooms, retail spaces, and feature interiors. Custom colour movement with a durable protective top coat.",
     },
@@ -154,7 +154,7 @@ export const serviceDetails = {
     process: {
       heading: "Our Process",
       subtitle:
-        "A durable finish starts with preparation, not just coating. J & L Epoxy follows a clear installation process to support long-term performance.",
+        "A durable finish starts with preparation, not just coating. JNL Epoxy follows a clear installation process to support long-term performance.",
       steps: [
         { title: "Inspect", description: "We review surface condition, cracks, moisture concerns, and use case." },
         { title: "Prepare", description: "Concrete is cleaned, repaired, and mechanically prepared for bonding." },
@@ -170,21 +170,21 @@ export const serviceDetails = {
     hero: {
       subtitle:
         "Heavy-duty epoxy flooring systems for warehouses, shops, retail units, service areas, and commercial spaces that need durable surfaces.",
-      image: "/images/service-commercial.jpg",
-      chips: ["Ontario Service", "Owner-Led by Leo", "Proper Surface Prep"],
+      image: "/images/gallery-1.jpg",
+      chips: ["Ontario Service", "Proper Surface Prep"],
     },
     seo: {
-      title: "Commercial Solid Epoxy Flooring Ontario",
+      title: "Commercial & Warehouse Epoxy Flooring Toronto & GTA",
       description:
         "Heavy-duty commercial solid epoxy flooring for Ontario warehouses, shops, retail units, and service areas. Durable, seamless, easy-to-clean coating systems.",
     },
     intro: {
       heading: "Commercial Epoxy Built for Workspaces",
-      image: "/images/service-commercial.jpg",
+      image: "/images/service-commercial.jpeg",
       imageAlt: "Commercial solid epoxy floor in a large workspace",
       paragraphs: [
         "Commercial solid epoxy is designed for practical performance. It creates a seamless, cleanable, and durable surface for spaces exposed to foot traffic, carts, equipment, spills, and daily operations.",
-        "J & L Epoxy helps businesses choose the right coating system based on floor condition, traffic level, cleaning needs, and turnaround time.",
+        "JNL Epoxy helps businesses choose the right coating system based on floor condition, traffic level, cleaning needs, and turnaround time.",
       ],
       bullets: [
         "Seamless surface that is easier to clean",
@@ -206,7 +206,7 @@ export const serviceDetails = {
     process: {
       heading: "Our Process",
       subtitle:
-        "A durable finish starts with preparation, not just coating. J & L Epoxy follows a clear installation process to support long-term performance.",
+        "A durable finish starts with preparation, not just coating. JNL Epoxy follows a clear installation process to support long-term performance.",
       steps: [
         { title: "Inspect", description: "We review surface condition, cracks, moisture concerns, and use case." },
         { title: "Prepare", description: "Concrete is cleaned, repaired, and mechanically prepared for bonding." },
@@ -223,10 +223,10 @@ export const serviceDetails = {
       subtitle:
         "A sleek, low-maintenance concrete finish that enhances existing concrete with a clean polished appearance.",
       image: "/images/service-polishing.jpg",
-      chips: ["Ontario Service", "Owner-Led by Leo", "Proper Surface Prep"],
+      chips: ["Ontario Service", "Proper Surface Prep"],
     },
     seo: {
-      title: "Concrete Polishing Ontario",
+      title: "Concrete Polishing Toronto & GTA",
       description:
         "Sleek, low-maintenance concrete polishing for Ontario commercial and residential spaces. A refined, durable, easy-clean finish without a full coating system.",
     },
@@ -258,7 +258,59 @@ export const serviceDetails = {
     process: {
       heading: "Our Process",
       subtitle:
-        "A durable finish starts with preparation, not just coating. J & L Epoxy follows a clear installation process to support long-term performance.",
+        "A durable finish starts with preparation, not just coating. JNL Epoxy follows a clear installation process to support long-term performance.",
+      steps: [
+        { title: "Inspect", description: "We review surface condition, cracks, moisture concerns, and use case." },
+        { title: "Prepare", description: "Concrete is cleaned, repaired, and mechanically prepared for bonding." },
+        { title: "Apply", description: "Base, epoxy, design, and protective layers are installed carefully." },
+        { title: "Seal", description: "A top coat is applied to protect the finish and improve durability." },
+      ],
+    },
+    faqs: FAQS,
+  },
+  "garage-epoxy": {
+    slug: "garage-epoxy",
+    title: "Garage Epoxy",
+    hero: {
+      subtitle:
+        "Tough, easy-clean epoxy floors that resist tire marks, salt, oil, and daily vehicle traffic — built for Ontario garages.",
+      image: "/images/service-garage.jpg",
+      chips: ["Ontario Service", "Proper Surface Prep"],
+    },
+    seo: {
+      title: "Garage Floor Epoxy Toronto & GTA",
+      description:
+        "Durable garage epoxy flooring for Ontario homes. Hot-tire, salt, and chemical resistant coatings with proper grinding, crack repair, and a clean showroom finish.",
+    },
+    intro: {
+      heading: "Garage Epoxy Built for Ontario Winters",
+      image: "/images/service-garage.jpg",
+      imageAlt: "Gray flake garage epoxy floor with a clean showroom finish",
+      paragraphs: [
+        "Garage epoxy turns bare, dusty concrete into a clean, durable surface that stands up to vehicles, tools, and everyday use. Engineered for Ontario conditions, it resists hot-tire pickup, road salt, and chemical spills while staying bright and easy to clean.",
+        "At JNL Epoxy, we focus on proper grinding, crack repair, and a strong protective top coat so your garage floor looks great and performs for years.",
+      ],
+      bullets: [
+        "Hot-tire and chemical resistant coating",
+        "Handles salt, moisture, and winter conditions",
+        "Slip-resistant flake options for safer footing",
+        "Easy to clean — just sweep or rinse",
+      ],
+    },
+    bestUses: {
+      heading: "Best Uses for Garage Epoxy",
+      subtitle:
+        "Every floor has a different purpose. We recommend the right epoxy system based on traffic, design goals, concrete condition, and how the space will be used.",
+      items: [
+        { title: "Home Garages", description: "Protects concrete from tire marks, salt, and oil while creating a showroom look." },
+        { title: "Workshops", description: "A durable, wipeable surface for tools, benches, and hobby spaces." },
+        { title: "Multi-Car & Detached", description: "Consistent, seamless coverage across larger garage floors." },
+      ],
+    },
+    process: {
+      heading: "Our Process",
+      subtitle:
+        "A durable finish starts with preparation, not just coating. JNL Epoxy follows a clear installation process to support long-term performance.",
       steps: [
         { title: "Inspect", description: "We review surface condition, cracks, moisture concerns, and use case." },
         { title: "Prepare", description: "Concrete is cleaned, repaired, and mechanically prepared for bonding." },

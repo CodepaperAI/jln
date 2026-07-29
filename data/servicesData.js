@@ -39,7 +39,7 @@ export const servicesData = [
       "Heavy-duty coating systems for warehouses, shops, and industrial spaces.",
     description:
       "High-build solid epoxy designed for foot traffic, carts, forklifts, and active operations, with low-downtime scheduling for businesses.",
-    image: "/images/service-commercial.jpg",
+    image: "/images/service-commercial.jpeg",
     badge: null,
     features: ["Forklift rated", "Low downtime", "USDA-friendly options"],
   },

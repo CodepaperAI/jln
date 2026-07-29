@@ -33,7 +33,7 @@ export default function GalleryPage() {
       <PageHeader
         title="Before & After Transformations"
         highlight="Transformations"
-       
+        subtitle="From worn-out concrete to high-gloss, premium flooring — a properly installed epoxy system changes how a space looks, feels, and functions."
         crumbs={[{ name: "Gallery", path: "/gallery" }]}
       />
 

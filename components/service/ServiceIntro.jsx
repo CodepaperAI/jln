@@ -7,7 +7,7 @@ import FadeRight from "@/components/animations/FadeRight";
 export default function ServiceIntro({ heading, paragraphs = [], bullets = [], image, imageAlt }) {
   return (
     <section className="section-pad">
-      <Container className="grid gap-12 lg:grid-cols-2 lg:items-center">
+      <Container className="grid gap-6 lg:grid-cols-2 lg:items-center">
         <FadeLeft>
           <h2 className="font-display text-2xl font-extrabold leading-tight tracking-tight text-white sm:text-3xl lg:text-4xl">
             {heading}
@@ -34,8 +34,7 @@ export default function ServiceIntro({ heading, paragraphs = [], bullets = [], i
         </FadeLeft>
 
         <FadeRight>
-          <div className="relative aspect-[4/5] overflow-hidden rounded-xl3 border border-hair shadow-luxe">
-            <Image
+<div className="relative aspect-[16/10] w-full max-w-2xl overflow-hidden rounded-xl3 border border-hair shadow-luxe lg:ml-auto">       <Image
               src={image}
               alt={imageAlt}
               fill

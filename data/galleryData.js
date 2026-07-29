@@ -1,6 +1,7 @@
-// Real J & L Epoxy project photos.
+// Real JNL Epoxy project photos.
 export const galleryData = [
   { id: 1, src: "/images/gallery-1.jpg", alt: "Black and white flake epoxy floor in a large commercial space", category: "commercial", tall: true },
+   { id: 6, src: "/images/gallery-11.jpeg", alt: "Black and white flake epoxy floor in a large commercial space", category: "commercial", tall: true },
   { id: 2, src: "/images/gallery-2.jpg", alt: "Gray flake epoxy garage floor with a clean finish", category: "garage", tall: false },
   { id: 3, src: "/images/gallery-3.jpg", alt: "Gray flake epoxy garage floor, showroom-style finish", category: "garage", tall: false },
   { id: 4, src: "/images/gallery-4.jpg", alt: "Gray flake epoxy bathroom floor with seamless coating", category: "residential", tall: true },

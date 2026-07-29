@@ -18,7 +18,7 @@ export default function Services() {
           eyebrow="What We Do"
           title="Flooring Services Built for Performance & Style"
           highlight="Performance & Style"
-         
+          subtitle="Choose from decorative flake finishes, luxury metallic designs, heavy-duty commercial coatings, and polished concrete surfaces. Every system is selected based on your concrete condition, use case, design preference, and long-term durability needs."
         />
 
         <Stagger className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">

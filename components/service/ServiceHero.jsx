@@ -15,7 +15,7 @@ export default function ServiceHero({ title, subtitle, image, chips = [] }) {
       </div>
       <div className="pointer-events-none absolute -right-20 top-10 h-80 w-80 rounded-full bg-gold/12 blur-[120px]" />
 
-      <Container className="relative pb-20 pt-10 md:pb-28">
+      <Container className="relative pb-10 pt-10 md:pb-14">
         <motion.h1
           className="max-w-4xl font-display text-3xl font-extrabold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-6xl"
           initial={{ opacity: 0, y: 28 }}

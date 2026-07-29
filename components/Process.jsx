@@ -14,7 +14,7 @@ export default function Process() {
           eyebrow="How It Works"
           title="Our Installation Process"
           highlight="Installation Process"
-         
+          subtitle="A premium epoxy floor starts below the surface. Our process is designed to help the coating bond properly, cure correctly, and deliver a finish that performs for years."
         />
 
         <Stagger className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">

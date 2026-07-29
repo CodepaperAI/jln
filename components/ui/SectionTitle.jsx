@@ -26,7 +26,7 @@ export default function SectionTitle({
       <Heading as="h2" highlight={highlight} className="text-2xl text-white sm:text-3xl lg:text-4xl">
         {title}
       </Heading>
-      {subtitle && <p className="text-sm leading-relaxed text-muted sm:text-base">{subtitle}</p>}
+      {subtitle && <p className="text-sm leading-relaxed text-white/70 sm:text-[15px]">{subtitle}</p>}
     </FadeUp>
   );
 }

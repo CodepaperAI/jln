@@ -102,7 +102,7 @@ export default function Navbar() {
                   </motion.div>
                 ))}
                 <div className="mt-3">
-                 <Button href={site.phoneHref} className="w-full" onClick={() => setOpen(false)}>
+                  <Button href={site.phoneHref} className="w-full" onClick={() => setOpen(false)}>
                     <FiPhone /> Call Now
                   </Button>
                 </div>

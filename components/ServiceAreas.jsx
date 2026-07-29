@@ -13,7 +13,7 @@ export default function ServiceAreas() {
           eyebrow="Coverage"
           title="Serving Ontario"
           highlight="Ontario"
-         
+          subtitle="Available across Toronto, Mississauga, Brampton, Vaughan, Hamilton, Oakville, Burlington, Markham, Richmond Hill, and the Greater Toronto Area."
         />
         <Stagger className="mt-10 flex flex-wrap justify-center gap-3">
           {serviceAreas.map((area) => (

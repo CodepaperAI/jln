@@ -50,6 +50,12 @@ export default function Footer() {
                 <Link href={item.href} className="transition hover:text-gold">{item.label}</Link>
               </li>
             ))}
+            <li>
+              <Link href="/epoxy-flooring-cost" className="transition hover:text-gold">Pricing</Link>
+            </li>
+            <li>
+              <Link href="/locations" className="transition hover:text-gold">Service Areas</Link>
+            </li>
           </ul>
         </div>
 
