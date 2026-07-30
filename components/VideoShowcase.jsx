@@ -1,14 +1,39 @@
 import Container from "@/components/layout/Container";
 import SectionTitle from "@/components/ui/SectionTitle";
 
-const videos = [
-  "/videos/showcase-portrait.mp4",
-  "/videos/showcase-3.mp4",
-  "/videos/showcase-4.mp4",
-  "/videos/showcase-landscape.mp4",
+const showcases = [
+  {
+   
+    before: "/videos/showcase-portrait.mp4",
+    after: "/videos/showcase-4.mp4",
+  },
+  {
+   
+    before: "/videos/showcase-3.mp4",
+    after: "/videos/showcase-landscape.mp4",
+  },
 ];
 
-// Plain grid (no fade animation) so the videos are always visible. Small, one row.
+function Clip({ src, tag }) {
+  return (
+    <div className="relative aspect-[9/16] w-full overflow-hidden rounded-xl2 border border-hair bg-black shadow-luxe">
+      <video
+        className="absolute inset-0 h-full w-full object-cover"
+        src={src}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+      />
+      <span className="absolute left-3 top-3 z-10 rounded-full bg-black/70 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-gold backdrop-blur-sm">
+        {tag}
+      </span>
+    </div>
+  );
+}
+
+// Before / after video pairs. Plain grid (no fade animation) so videos are always visible.
 export default function VideoShowcase() {
   return (
     <section className="section-pad bg-surface/30">
@@ -20,21 +45,14 @@ export default function VideoShowcase() {
           subtitle="Real JLN Epoxy installations across Ontario — from garages and basements to commercial floors."
         />
 
-        <div className="mx-auto mt-10 grid max-w-3xl grid-cols-2 gap-4 sm:grid-cols-4">
-          {videos.map((src) => (
-            <div
-              key={src}
-              className="relative aspect-[9/16] w-full overflow-hidden rounded-xl2 border border-hair bg-black shadow-luxe"
-            >
-              <video
-                className="absolute inset-0 h-full w-full object-cover"
-                src={src}
-                autoPlay
-                muted
-                loop
-                playsInline
-                preload="auto"
-              />
+        <div className="mx-auto mt-10 grid max-w-4xl gap-8 sm:grid-cols-2">
+          {showcases.map((s) => (
+            <div key={s.label}>
+              <div className="grid grid-cols-2 gap-3">
+                <Clip src={s.before} tag="Before" />
+                <Clip src={s.after} tag="After" />
+              </div>
+             
             </div>
           ))}
         </div>

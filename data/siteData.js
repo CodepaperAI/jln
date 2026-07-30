@@ -3,7 +3,7 @@ export const site = {
   name: "JLN Epoxy",
   tagline: "Premium Epoxy Flooring in Ontario",
   description:
-    "J & L Epoxy installs durable, seamless, and premium epoxy flooring systems for garages, basements, showrooms, retail units, warehouses, and commercial spaces across Ontario.",
+    "JNL Epoxy installs durable, seamless, and premium epoxy flooring systems for garages, basements, showrooms, retail units, warehouses, and commercial spaces across Ontario.",
   owner: "Leo",
   url: "https://jln-gamma.vercel.app",
   email: "Jlnepoxy@gmail.com",

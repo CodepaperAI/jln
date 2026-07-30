@@ -34,7 +34,7 @@ const costFaqs = [
   { q: "How much does epoxy flooring cost in Ontario?", a: "Most residential epoxy floors in Ontario land between $4 and $15 per square foot installed, depending on the coating system, concrete condition, and preparation required. A clean, ready 2-car garage typically runs $2,400–$4,500, while a designer metallic floor costs more per square foot." },
   { q: "Why is proper preparation worth paying for?", a: "Most epoxy failures come from poor surface prep. Diamond grinding, crack repair, and cleaning cost more upfront than a quick acid etch, but they let the coating bond correctly so the floor lasts for years instead of peeling." },
   { q: "Is epoxy cheaper than tile or new concrete?", a: "Usually yes. Epoxy coats your existing concrete instead of replacing it, so it is typically less expensive than tiling or pouring a new slab, while adding durability and a premium look." },
-  { q: "Do you provide a firm quote?", a: "Yes. J & L Epoxy provides project-specific estimates after understanding your space — size, concrete condition, and the finish you want. Contact us for a free, no-obligation quote." },
+  { q: "Do you provide a firm quote?", a: "Yes. JNL Epoxy provides project-specific estimates after understanding your space — size, concrete condition, and the finish you want. Contact us for a free, no-obligation quote." },
 ];
 
 export default function EpoxyFlooringCost() {

@@ -4,11 +4,11 @@ export const locations = [
     slug: "toronto",
     city: "Toronto",
     blurb:
-      "From downtown condos to detached garages in Etobicoke and Scarborough, Toronto floors take a beating from road salt, freeze-thaw cycles, and heavy daily use. J & L Epoxy installs seamless, easy-clean epoxy systems built to handle it.",
+      "From downtown condos to detached garages in Etobicoke and Scarborough, Toronto floors take a beating from road salt, freeze-thaw cycles, and heavy daily use. JNL Epoxy installs seamless, easy-clean epoxy systems built to handle it.",
     areas: ["Downtown", "North York", "Etobicoke", "Scarborough", "East York"],
     faq: {
       q: "Do you install epoxy floors across Toronto?",
-      a: "Yes — J & L Epoxy serves all of Toronto, including North York, Etobicoke, Scarborough, and East York, for garages, basements, and commercial spaces.",
+      a: "Yes — JNL Epoxy serves all of Toronto, including North York, Etobicoke, Scarborough, and East York, for garages, basements, and commercial spaces.",
     },
   },
   {
@@ -26,7 +26,7 @@ export const locations = [
     slug: "brampton",
     city: "Brampton",
     blurb:
-      "Brampton garages and workshops benefit from a tough flake or polyaspartic coating that resists tires, salt, and spills. J & L Epoxy delivers a showroom finish that holds up to real use.",
+      "Brampton garages and workshops benefit from a tough flake or polyaspartic coating that resists tires, salt, and spills. JNL Epoxy delivers a showroom finish that holds up to real use.",
     areas: ["Bramalea", "Heart Lake", "Springdale", "Mount Pleasant", "Downtown Brampton"],
     faq: {
       q: "Is epoxy good for Brampton winters?",
@@ -48,7 +48,7 @@ export const locations = [
     slug: "hamilton",
     city: "Hamilton",
     blurb:
-      "Hamilton's mix of older homes and industrial spaces makes epoxy a smart, durable choice. J & L Epoxy handles garages, basements, and commercial floors across the city and the Mountain.",
+      "Hamilton's mix of older homes and industrial spaces makes epoxy a smart, durable choice. JNL Epoxy handles garages, basements, and commercial floors across the city and the Mountain.",
     areas: ["The Mountain", "Dundas", "Ancaster", "Stoney Creek", "Downtown Hamilton"],
     faq: {
       q: "Do you coat commercial floors in Hamilton?",
@@ -74,7 +74,7 @@ export const locations = [
     areas: ["Aldershot", "Alton", "Millcroft", "Downtown Burlington", "Tyandaga"],
     faq: {
       q: "Do you serve Burlington and the surrounding area?",
-      a: "Yes — J & L Epoxy installs epoxy flooring throughout Burlington, including Aldershot, Alton, and Millcroft.",
+      a: "Yes — JNL Epoxy installs epoxy flooring throughout Burlington, including Aldershot, Alton, and Millcroft.",
     },
   },
   {
@@ -92,7 +92,7 @@ export const locations = [
     slug: "richmond-hill",
     city: "Richmond Hill",
     blurb:
-      "Richmond Hill garages and interiors benefit from a durable, premium epoxy finish. J & L Epoxy delivers seamless coatings that resist salt, moisture, and daily wear.",
+      "Richmond Hill garages and interiors benefit from a durable, premium epoxy finish. JNL Epoxy delivers seamless coatings that resist salt, moisture, and daily wear.",
     areas: ["Oak Ridges", "Bayview Hill", "Mill Pond", "Jefferson", "Observatory"],
     faq: {
       q: "How durable is epoxy for a Richmond Hill garage?",
@@ -114,7 +114,7 @@ export const locations = [
     slug: "scarborough",
     city: "Scarborough",
     blurb:
-      "Scarborough garages, basements, and commercial units get a tough, seamless epoxy surface. J & L Epoxy focuses on preparation first for a floor that performs for years.",
+      "Scarborough garages, basements, and commercial units get a tough, seamless epoxy surface. JNL Epoxy focuses on preparation first for a floor that performs for years.",
     areas: ["Agincourt", "Guildwood", "Malvern", "Birch Cliff", "West Hill"],
     faq: {
       q: "Do you handle both homes and businesses in Scarborough?",

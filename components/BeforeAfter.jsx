@@ -29,7 +29,7 @@ export default function BeforeAfter() {
           eyebrow="Real Results"
           title="Before & After"
           highlight="After"
-          subtitle="Real J & L Epoxy transformations across Ontario — from bare, worn concrete to a clean, durable finish."
+          subtitle="Real JNL Epoxy transformations across Ontario — from bare, worn concrete to a clean, durable finish."
         />
 
         <Stagger className="mt-10 grid gap-6 sm:grid-cols-2">

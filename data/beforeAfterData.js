@@ -1,4 +1,4 @@
-// Real J & L Epoxy before/after project pairs.
+// Real JNL Epoxy before/after project pairs.
 export const beforeAfterData = [
   {
     id: "garage1",

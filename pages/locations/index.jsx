@@ -19,7 +19,7 @@ export default function LocationsHub() {
     <Layout>
       <Seo
         title="Epoxy Flooring Service Areas Across the GTA"
-        description="J & L Epoxy installs epoxy flooring across the Greater Toronto Area — Toronto, Mississauga, Brampton, Vaughan, Hamilton, Oakville, and more. Find your city."
+        description="JNL Epoxy installs epoxy flooring across the Greater Toronto Area — Toronto, Mississauga, Brampton, Vaughan, Hamilton, Oakville, and more. Find your city."
         path="/locations"
         jsonLd={jsonLd}
       />
