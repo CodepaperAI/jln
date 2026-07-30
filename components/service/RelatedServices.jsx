@@ -9,7 +9,7 @@ import { fadeUp } from "@/lib/motion";
 import { servicesData } from "@/data/servicesData";
 import { serviceHref } from "@/utils/serviceHref";
 
-export default function RelatedServices({ currentSlug, limit = 4 }) {
+export default function RelatedServices({ currentSlug, limit = 3 }) {
   const others = servicesData.filter((s) => s.slug !== currentSlug).slice(0, limit);
   if (others.length === 0) return null;
 
@@ -22,14 +22,14 @@ export default function RelatedServices({ currentSlug, limit = 4 }) {
           highlight="Flooring Services"
         />
 
-<Stagger className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">  
-         {others.map((service) => (
+        <Stagger className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {others.map((service) => (
             <motion.article
               key={service.slug}
               variants={fadeUp}
               className="group overflow-hidden rounded-xl2 glass shadow-luxe transition hover:border-gold/30 hover:shadow-gold-soft"
             >
-<div className="relative aspect-[16/9] overflow-hidden">
+              <div className="relative aspect-[16/10] overflow-hidden">
                 <Image
                   src={service.image}
                   alt={service.title}

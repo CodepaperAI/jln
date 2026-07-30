@@ -16,7 +16,7 @@ export default function Testimonials() {
           eyebrow="Client Reviews"
           title="Trusted Across Ontario"
           highlight="Ontario"
-          subtitle="Homeowners and businesses choose JNL Epoxy for clean workmanship and floors that hold up."
+          subtitle="Homeowners and businesses choose J & L Epoxy for clean workmanship and floors that hold up."
         />
 
         <div className="mt-14">

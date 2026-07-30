@@ -2,12 +2,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { cn } from "@/utils/cn";
 
-// Uses the uploaded JNL Epoxy brand mark.
+// Uses the uploaded J & L Epoxy brand mark.
 export default function Logo({ className = "", href = "/", size = 44 }) {
   return (
     <Link
       href={href}
-      aria-label="JNL Epoxy — home"
+      aria-label="JLN Epoxy — home"
       className={cn("inline-flex items-center gap-2.5", className)}
     >
       <span
@@ -16,7 +16,7 @@ export default function Logo({ className = "", href = "/", size = 44 }) {
       >
         <Image
           src="/images/logo.png"
-          alt="JNL Epoxy logo"
+          alt="JLN Epoxy logo"
           fill
           sizes="44px"
           className="object-cover"
@@ -24,7 +24,7 @@ export default function Logo({ className = "", href = "/", size = 44 }) {
         />
       </span>
       <span className="font-display text-base font-extrabold tracking-tight sm:text-lg">
-        <span className="text-white">JNL</span> <span className="hl">EPOXY</span>
+        <span className="text-white">JLN</span> <span className="hl">EPOXY</span>
       </span>
     </Link>
   );

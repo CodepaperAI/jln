@@ -50,14 +50,14 @@ export default function CityPage({ location }) {
     <Layout>
       <Seo
         title={`Epoxy Flooring ${city} | Garage, Metallic & Commercial`}
-        description={`Premium epoxy flooring in ${city}, Ontario — garage, flake, metallic & commercial floors and concrete polishing by JNL Epoxy. Free quote, owner-led installs.`}
+        description={`Premium epoxy flooring in ${city}, Ontario — garage, flake, metallic & commercial floors and concrete polishing by J & L Epoxy. Free quote, owner-led installs.`}
         path={path}
         jsonLd={jsonLd}
       />
       <PageHeader
         title={`Epoxy Flooring in ${city}`}
         highlight={city}
-        subtitle={`Durable, seamless epoxy floors for ${city} garages, basements, and commercial spaces — installed with proper preparation by JNL Epoxy.`}
+        subtitle={`Durable, seamless epoxy floors for ${city} garages, basements, and commercial spaces — installed with proper preparation by J & L Epoxy.`}
         crumbs={[
           { name: "Locations", path: "/locations" },
           { name: city, path },

@@ -10,7 +10,7 @@ import Stagger from "@/components/animations/Stagger";
 import { fadeUp } from "@/lib/motion";
 import { galleryData } from "@/data/galleryData";
 
-export default function Gallery({ limit = 5 }) {
+export default function Gallery({ limit = 6 }) {
   const [active, setActive] = useState(null);
   const items = galleryData.slice(0, limit);
 

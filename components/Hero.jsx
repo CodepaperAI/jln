@@ -9,7 +9,8 @@ import { easeLuxe } from "@/lib/motion";
 import { site } from "@/data/siteData";
 
 const chips = [
-  { icon: FiAward, label: "5+ Years Experience" },
+  { icon: FiAward, label: "3+ Years Experience" },
+  
   { icon: FiMapPin, label: "Serving Ontario" },
 ];
 

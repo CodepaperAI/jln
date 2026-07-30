@@ -39,52 +39,40 @@ export default function ServicesPage() {
       />
 
       <section className="section-pad">
-        <Container className="flex flex-col gap-14">
-          {servicesData.map((service, i) => (
-            <FadeUp key={service.slug}>
-              <div
-                id={service.slug}
-                className={`grid scroll-mt-28 gap-10 lg:items-center ${
-                  i % 2 === 1
-                    ? "lg:grid-cols-[minmax(0,1fr)_minmax(0,34rem)] lg:[&>*:first-child]:order-2"
-                    : "lg:grid-cols-[minmax(0,34rem)_minmax(0,1fr)]"
-                }`}
-              >
-                <ConditionalLink
-                  href={hasDetailPage(service.slug) ? serviceHref(service.slug) : null}
-                  className="group relative block aspect-[4/3] overflow-hidden rounded-xl2 border border-hair shadow-luxe"
-                >
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    fill
-                    sizes="(max-width:1024px) 100vw, 40vw"
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                </ConditionalLink>
-                <div>
-                  {service.badge && <Badge className="mb-4">{service.badge}</Badge>}
-                  <h2 className="font-display text-xl font-bold sm:text-2xl">{service.title}</h2>
-                  <p className="mt-4 text-base leading-relaxed text-muted">{service.description}</p>
-                  <ul className="mt-6 flex flex-wrap gap-3">
-                    {service.features.map((f) => (
-                      <li
-                        key={f}
-                        className="rounded-full border border-hair bg-surface/50 px-4 py-2 text-sm text-white/85"
-                      >
-                        {f}
-                      </li>
-                    ))}
-                  </ul>
-                  <div className="mt-8 flex flex-wrap gap-4">
-                    <Button href={serviceHref(service.slug)}>
-                      View Details <FiArrowRight />
-                    </Button>
+        <Container>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {servicesData.map((service) => (
+              <FadeUp key={service.slug}>
+                <article className="group flex h-full flex-col overflow-hidden rounded-xl2 glass shadow-luxe transition hover:border-gold/30 hover:shadow-gold-soft">
+                  <div className="relative aspect-[16/10] overflow-hidden">
+                    <Image
+                      src={service.image}
+                      alt={service.title}
+                      fill
+                      sizes="(max-width:768px) 100vw, 33vw"
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
+                    {service.badge && (
+                      <div className="absolute left-4 top-4">
+                        <Badge>{service.badge}</Badge>
+                      </div>
+                    )}
                   </div>
-                </div>
-              </div>
-            </FadeUp>
-          ))}
+                  <div className="flex flex-1 flex-col p-6">
+                    <h3 className="font-display text-lg font-bold text-white">{service.title}</h3>
+                    <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">{service.excerpt}</p>
+                    <Link
+                      href={serviceHref(service.slug)}
+                      className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-gold transition-all group-hover:gap-3"
+                    >
+                      {hasDetailPage(service.slug) ? "View Details" : "Learn More"} <FiArrowRight />
+                    </Link>
+                  </div>
+                </article>
+              </FadeUp>
+            ))}
+          </div>
         </Container>
       </section>
 

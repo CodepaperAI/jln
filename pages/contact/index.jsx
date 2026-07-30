@@ -12,6 +12,7 @@ import { breadcrumbSchema } from "@/lib/schema";
 
 const details = [
   { icon: FiPhone, label: "Phone", value: site.phoneDisplay, href: site.phoneHref },
+  { icon: FiPhone, label: "Phone", value: site.phoneDisplay2, href: site.phoneHref2 },
   { icon: FiMail, label: "Email", value: site.email, href: `mailto:${site.email}` },
   { icon: FiMapPin, label: "Service Area", value: site.region },
   { icon: FiClock, label: "Hours", value: site.hours },

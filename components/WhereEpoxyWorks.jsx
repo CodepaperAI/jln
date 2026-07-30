@@ -13,7 +13,7 @@ export default function WhereEpoxyWorks() {
           eyebrow="Applications"
           title="Where Epoxy Works Best"
           highlight="Works Best"
-          subtitle="Epoxy flooring is a smart upgrade for spaces that need strength, easy maintenance, and a clean premium appearance. JNL Epoxy installs floors for homeowners and businesses across Ontario, including garages, basements, warehouses, retail units, showrooms, and offices."
+          subtitle="Epoxy flooring is a smart upgrade for spaces that need strength, easy maintenance, and a clean premium appearance. J & L Epoxy installs floors for homeowners and businesses across Ontario, including garages, basements, warehouses, retail units, showrooms, and offices."
         />
 
         <Stagger className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

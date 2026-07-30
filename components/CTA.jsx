@@ -35,6 +35,13 @@ export default function CTA() {
                 >
                   <FiPhone className="text-gold" /> {site.phoneDisplay}
                 </a>
+
+                <a
+                  href={site.phoneHref2}
+                  className="inline-flex items-center gap-2 text-lg font-semibold text-white transition hover:text-gold"
+                >
+                  <FiPhone className="text-gold" /> {site.phoneDisplay2}
+                </a>
               </div>
             </div>
           </div>

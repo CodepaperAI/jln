@@ -1,6 +1,9 @@
-import "@/styles/globals.css";
+import { useEffect, useState } from "react";
 
+import "@/styles/globals.css";
+import RouteLoader from "@/components/layout/RouteLoader";
 export default function App({ Component, pageProps }) {
+   
   return (
     <>
       <a
@@ -9,6 +12,7 @@ export default function App({ Component, pageProps }) {
       >
         Skip to content
       </a>
+      <RouteLoader />
       <Component {...pageProps} />
     </>
   );

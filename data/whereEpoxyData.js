@@ -1,6 +1,6 @@
-import { FiTruck, FiHome, FiPackage, FiShoppingBag, FiStar, FiBriefcase } from "react-icons/fi";
+import { FiTruck, FiHome, FiPackage, FiShoppingBag, FiStar, FiBriefcase,FiLayers  } from "react-icons/fi";
 
-// "Where Epoxy Works Best" — the spaces JNL Epoxy installs in.
+// "Where Epoxy Works Best" — the spaces J & L Epoxy installs in.
 export const whereEpoxyData = [
   {
     title: "Garages",
@@ -36,6 +36,13 @@ export const whereEpoxyData = [
       "Metallic and polished finishes help products stand out with a high-end visual floor that supports your brand.",
     image: "/images/use-showroom.jpg",
     icon: FiStar,
+  },
+  {
+    title: "Countertops",
+    description:
+      "Seamless poured epoxy surfaces for kitchens, bathrooms, and bars — heat-resistant, non-porous, and finished in marble or metallic styles.",
+    image: "/images/use-countertop.jpg",
+    icon: FiLayers,
   },
   {
     title: "Offices",

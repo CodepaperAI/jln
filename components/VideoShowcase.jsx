@@ -1,10 +1,14 @@
-import { motion } from "framer-motion";
 import Container from "@/components/layout/Container";
 import SectionTitle from "@/components/ui/SectionTitle";
-import FadeLeft from "@/components/animations/FadeLeft";
-import FadeRight from "@/components/animations/FadeRight";
 
-// Real project footage — landscape clip as the main player, vertical clip beside it.
+const videos = [
+  "/videos/showcase-portrait.mp4",
+  "/videos/showcase-3.mp4",
+  "/videos/showcase-4.mp4",
+  "/videos/showcase-landscape.mp4",
+];
+
+// Plain grid (no fade animation) so the videos are always visible. Small, one row.
 export default function VideoShowcase() {
   return (
     <section className="section-pad bg-surface/30">
@@ -13,51 +17,26 @@ export default function VideoShowcase() {
           eyebrow="See It In Action"
           title="Our Work on Video"
           highlight="on Video"
-          subtitle="Real JNL Epoxy installations across Ontario — from garages and basements to commercial floors."
+          subtitle="Real JLN Epoxy installations across Ontario — from garages and basements to commercial floors."
         />
 
-        <div className="mt-10 flex flex-col items-center justify-center gap-6 sm:flex-row sm:flex-wrap">
-          <FadeLeft>
-            <div className="relative mx-auto aspect-[9/16] max-h-[440px] w-full max-w-[300px] overflow-hidden rounded-xl2 border border-hair shadow-luxe">
+        <div className="mx-auto mt-10 grid max-w-3xl grid-cols-2 gap-4 sm:grid-cols-4">
+          {videos.map((src) => (
+            <div
+              key={src}
+              className="relative aspect-[9/16] w-full overflow-hidden rounded-xl2 border border-hair bg-black shadow-luxe"
+            >
               <video
-                className="h-full w-full object-cover"
-                src="/videos/showcase-landscape.mp4"
+                className="absolute inset-0 h-full w-full object-cover"
+                src={src}
                 autoPlay
                 muted
                 loop
                 playsInline
-                preload="metadata"
+                preload="auto"
               />
             </div>
-          </FadeLeft>
-
-          <FadeRight>
-            <div className="relative mx-auto aspect-[9/16] max-h-[440px] w-full max-w-[300px] overflow-hidden rounded-xl2 border border-hair shadow-luxe">
-              <video
-                className="h-full w-full object-cover"
-                src="/videos/showcase-portrait.mp4"
-                autoPlay
-                muted
-                loop
-                playsInline
-                preload="metadata"
-              />
-            </div>
-          </FadeRight>
-
-          <FadeRight>
-            <div className="relative mx-auto aspect-[9/16] max-h-[440px] w-full max-w-[300px] overflow-hidden rounded-xl2 border border-hair shadow-luxe">
-              <video
-                className="h-full w-full object-cover"
-                src="/videos/showcase-portrait-2.mp4"
-                autoPlay
-                muted
-                loop
-                playsInline
-                preload="metadata"
-              />
-            </div>
-          </FadeRight>
+          ))}
         </div>
       </Container>
     </section>

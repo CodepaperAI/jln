@@ -25,7 +25,7 @@ export default function AboutPage() {
     <Layout>
       <Seo
         title="About"
-        description="JNL Epoxy is an Ontario-based epoxy flooring company led by Leo, with 5+ years of hands-on experience."
+        description="J & L Epoxy is an Ontario-based epoxy flooring company led by Leo, with 5 years of hands-on experience."
         path="/about"
         jsonLd={breadcrumbSchema([
           { name: "Home", path: "/" },
@@ -33,8 +33,8 @@ export default function AboutPage() {
         ])}
       />
       <PageHeader
-        title="About JNL Epoxy"
-        highlight="JNL Epoxy"
+        title="About J & L Epoxy"
+        highlight="J & L Epoxy"
         subtitle="An Ontario-based epoxy flooring company built on preparation, quality materials, and owner-led attention to detail."
         crumbs={[{ name: "About", path: "/about" }]}
       />
@@ -42,22 +42,22 @@ export default function AboutPage() {
       <section className="section-pad">
         <Container className="grid gap-12 lg:grid-cols-2 lg:items-center">
           <FadeLeft>
-            <div className="relative aspect-[4/3] overflow-hidden rounded-xl2 border border-hair shadow-luxe">
-              <Image
-                src="/images/about.jpg"
-                alt="Owner applying a metallic epoxy floor"
-                fill
-                sizes="(max-width:1024px) 100vw, 50vw"
-                className="object-cover"
-              />
-            </div>
-          </FadeLeft>
+  <Image
+    src="/images/logo.png"
+    alt={`${site.name} logo`}
+    width={520}
+    height={520}
+    sizes="(max-width:1024px) 80vw, 45vw"
+    className="mx-auto h-auto w-full max-w-[460px] object-contain drop-shadow-[0_10px_40px_rgba(0,0,0,0.6)]"
+    priority
+  />
+</FadeLeft>
           <FadeRight>
             <h2 className="font-display text-3xl font-bold sm:text-4xl">
               Owner-led craft, <span className="hl">start to finish</span>
             </h2>
             <p className="mt-5 text-base leading-relaxed text-muted">
-              JNL Epoxy is led by {site.owner}, who brings over 5 years of hands-on
+              J & L Epoxy is led by {site.owner}, who brings over 5 years of hands-on
               experience in residential and commercial flooring. Our focus is simple:
               proper surface preparation, quality materials, clean workmanship, and floors
               that look impressive while standing up to everyday use.

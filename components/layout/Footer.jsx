@@ -84,7 +84,12 @@ export default function Footer() {
             </li>
             <li className="flex items-start gap-3">
               <FiPhone className="mt-0.5 shrink-0 text-gold" />
-              <a href={site.phoneHref} className="transition hover:text-gold">{site.phoneDisplay}</a>
+              <span className="flex flex-col gap-1">
+                <a href={site.phoneHref} className="transition hover:text-gold">{site.phoneDisplay}</a>
+                {site.phoneDisplay2 && (
+                  <a href={site.phoneHref2} className="transition hover:text-gold">{site.phoneDisplay2}</a>
+                )}
+              </span>
             </li>
             <li className="flex items-start gap-3">
               <FiMail className="mt-0.5 shrink-0 text-gold" />

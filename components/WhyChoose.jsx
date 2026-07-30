@@ -15,11 +15,11 @@ export default function WhyChoose() {
 
       <Container className="relative grid gap-12 lg:grid-cols-2 lg:items-center">
         <FadeLeft>
-          <Heading as="h2" highlight="JNL Epoxy" className="text-2xl text-white sm:text-3xl lg:text-4xl">
-            Why Choose JNL Epoxy?
+          <Heading as="h2" highlight="J & L Epoxy" className="text-2xl text-white sm:text-3xl lg:text-4xl">
+            Why Choose J & L Epoxy?
           </Heading>
           <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted">
-            Most epoxy floors fail because of poor surface preparation. JNL Epoxy focuses on the
+            Most epoxy floors fail because of poor surface preparation. J & L Epoxy focuses on the
             foundation of the floor first: grinding, crack repair, cleaning, bonding, coating, and
             sealing.
           </p>

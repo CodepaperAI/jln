@@ -21,14 +21,14 @@ export default function Services() {
           subtitle="Choose from decorative flake finishes, luxury metallic designs, heavy-duty commercial coatings, and polished concrete surfaces. Every system is selected based on your concrete condition, use case, design preference, and long-term durability needs."
         />
 
-        <Stagger className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        <Stagger className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {servicesData.map((service) => (
             <motion.article
               key={service.slug}
               variants={fadeUp}
               className="group relative flex flex-col overflow-hidden rounded-xl2 glass shadow-luxe transition-shadow duration-300 hover:border-gold/30 hover:shadow-gold-soft"
             >
-              <div className="relative aspect-[4/3] overflow-hidden">
+              <div className="relative aspect-[16/10] overflow-hidden">
                 <Image
                   src={service.image}
                   alt={service.title}

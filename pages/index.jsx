@@ -3,7 +3,9 @@ import Seo from "@/components/layout/Seo";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import WhyChoose from "@/components/WhyChoose";
+import Brands from "@/components/Brands";
 import Gallery from "@/components/Gallery";
+import BeforeAfter from "@/components/BeforeAfter";
 import VideoShowcase from "@/components/VideoShowcase";
 import WhereEpoxyWorks from "@/components/WhereEpoxyWorks";
 import Process from "@/components/Process";
@@ -29,7 +31,7 @@ export default function Home() {
       <Hero />
       <Services />
       <WhyChoose />
-      <Gallery />
+      <BeforeAfter />
       <VideoShowcase />
       <WhereEpoxyWorks />
       <Process />
@@ -37,6 +39,7 @@ export default function Home() {
       <Testimonials />
       <ServiceAreas />
       <FAQ />
+      <Brands />
       <AboutPreview />
       <CTA />
     </Layout>
