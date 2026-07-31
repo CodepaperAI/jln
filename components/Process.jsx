@@ -24,10 +24,10 @@ export default function Process() {
               variants={fadeUp}
               className="group relative rounded-xl2 glass p-6 shadow-luxe transition hover:-translate-y-1.5 hover:border-gold/30 hover:shadow-gold-soft"
             >
-              <span className="grid h-11 w-11 place-items-center rounded-full border border-gold/30 bg-gold/10 font-display text-sm font-bold text-gold transition group-hover:bg-gold group-hover:text-base">
+              <span className="grid h-11 w-11 place-items-center rounded-full border border-gold/30 bg-gold/10 font-display text-sm font-bold text-gold transition group-hover:bg-gold group-hover:text-ink">
                 {i + 1}
               </span>
-              <h3 className="mt-5 font-display text-lg font-bold text-white">{item.title}</h3>
+              <h3 className="mt-5 font-display text-lg font-bold text-fg">{item.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-muted">{item.description}</p>
             </motion.div>
           ))}

@@ -2,11 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --gold: #d4af37;
-  --gold-soft: #f4e3b2;
-  --font-jakarta: "Plus Jakarta Sans", system-ui, sans-serif;
+:root, .dark {
+  --font-jakarta: "Sora", system-ui, sans-serif;
   --font-inter: "Inter", system-ui, sans-serif;
+
+  /* Dark theme tokens (R G B) — unchanged */
+  --c-base: 10 10 11;
+  --c-surface: 20 20 22;
+  --c-card: 22 22 24;
+  --c-fg: 255 255 255;
+  --c-muted: 161 161 166;
+  --c-hair: 255 255 255;
+  --c-gold: 245 197 24;
+  --c-gold-soft: 255 222 107;
+  --c-gold-deep: 203 154 5;
+  --glass-rgb: 255 255 255;
+  --glass-a: 0.03;
+  --glass-a-strong: 0.05;
+}
+
+.light {
+  /* Light theme palette:
+     Ivory bg #F8F7F3 · White cards #FFFFFF · Navy headings #0B1F33 ·
+     Slate body #536170 · Warm Gold #E7B52F */
+  --c-base: 248 247 243;    /* Ivory main background */
+  --c-surface: 255 255 255; /* White sections */
+  --c-card: 255 255 255;    /* White cards */
+  --c-fg: 11 31 51;         /* Deep Navy headings/strong text */
+  --c-muted: 83 97 112;     /* Slate body text */
+  --c-hair: 11 31 51;       /* Navy hairlines (low alpha) */
+  --c-gold: 231 181 47;     /* Warm Gold #E7B52F */
+  --c-gold-soft: 242 208 118;
+  --c-gold-deep: 194 148 30;
+  --glass-rgb: 255 255 255; /* White glass cards */
+  --glass-a: 0.82;
+  --glass-a-strong: 0.95;
+}
+
+/* Navbar & footer use Deep Navy in light mode (tokens flip locally). */
+.light header {
+  --c-base: 11 31 51;
+  --c-surface: 15 38 61;
+  --c-fg: 248 247 243;
+  --c-muted: 200 206 214;
+  --c-hair: 255 255 255;
+  background-color: rgb(var(--c-base)); /* solid navy bar in light mode */
+}
+.light footer {
+  --c-base: 11 31 51;
+  --c-surface: 11 31 51;
+  --c-card: 11 31 51;
+  --c-fg: 248 247 243;
+  --c-muted: 200 206 214;
+  --c-hair: 255 255 255;
+  background-color: rgb(var(--c-base));
+}
+
+/* In light mode, blend photos/videos toward the warm, airy theme. */
+.light img.object-cover,
+.light video {
+  filter: saturate(0.92) brightness(1.04) contrast(0.96) sepia(0.06);
 }
 
 * {
@@ -18,13 +73,13 @@ html {
 }
 
 body {
-  @apply bg-base text-white font-body antialiased;
+  @apply bg-base text-fg font-body antialiased;
   overflow-x: hidden;
 }
 
 ::selection {
-  background: rgba(212, 175, 55, 0.28);
-  color: #fff;
+  background: rgba(245, 197, 24, 0.28);
+  color: inherit;
 }
 
 /* Gold scrollbar */
@@ -32,27 +87,29 @@ body {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #0b0e13;
+  background: rgb(var(--c-base));
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #d4af37, #8a6f1e);
+  background: linear-gradient(180deg, #f5c518, #8a6f1e);
   border-radius: 999px;
-  border: 2px solid #0b0e13;
+  border: 2px solid rgb(var(--c-base));
 }
 
 @layer components {
   /* Glass surfaces */
   .glass {
-    @apply bg-white/[0.03] backdrop-blur-xl border border-hair;
+    @apply backdrop-blur-xl border border-hair;
+    background: rgb(var(--glass-rgb) / var(--glass-a));
   }
   .glass-strong {
-    @apply bg-white/[0.05] backdrop-blur-2xl border border-hair;
+    @apply backdrop-blur-2xl border border-hair;
+    background: rgb(var(--glass-rgb) / var(--glass-a-strong));
   }
 
   /* Accent text — gold gradient (used by Heading `highlight`) */
   .hl,
   .text-gold-gradient {
-    background: linear-gradient(180deg, #f4e3b2 0%, #d4af37 60%, #b4922a 100%);
+    background: linear-gradient(180deg, rgb(var(--c-gold-soft)) 0%, rgb(var(--c-gold)) 55%, rgb(var(--c-gold-deep)) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -63,9 +120,9 @@ body {
     height: 1px;
     background-image: linear-gradient(
       90deg,
-      rgba(212, 175, 55, 0) 0%,
-      rgba(212, 175, 55, 0.7) 50%,
-      rgba(212, 175, 55, 0) 100%
+      rgba(245, 197, 24, 0) 0%,
+      rgba(245, 197, 24, 0.7) 50%,
+      rgba(245, 197, 24, 0) 100%
     );
   }
 }
@@ -86,4 +143,36 @@ body {
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* ---- Snow (light mode only) ---- */
+.snow-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 30;
+  overflow: hidden;
+  display: none;
+}
+.light .snow-layer {
+  display: block;
+}
+.snow-flake {
+  position: absolute;
+  top: -12px;
+  border-radius: 9999px;
+  background: #ffffff;
+  box-shadow: 0 0 6px rgba(203, 154, 5, 0.35);
+  opacity: 0.85;
+  animation-name: snow-fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes snow-fall {
+  0% { transform: translateY(-12px) translateX(0) rotate(0deg); opacity: 0; }
+  10% { opacity: 0.9; }
+  100% { transform: translateY(105vh) translateX(var(--drift, 20px)) rotate(360deg); opacity: 0.9; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .snow-flake { animation: none; display: none; }
 }

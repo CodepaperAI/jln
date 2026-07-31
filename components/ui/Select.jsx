@@ -4,7 +4,7 @@ export default function Select({ label, id, error, options = [], className = "",
   return (
     <div className="flex flex-col gap-2">
       {label && (
-        <label htmlFor={id} className="text-sm font-medium text-white/80">
+        <label htmlFor={id} className="text-sm font-medium text-fg/80">
           {label}
         </label>
       )}
@@ -12,7 +12,7 @@ export default function Select({ label, id, error, options = [], className = "",
         id={id}
         aria-invalid={!!error}
         className={cn(
-          "w-full rounded-xl border bg-surface/60 px-4 py-3.5 text-white outline-none backdrop-blur transition",
+          "w-full rounded-xl border bg-surface/60 px-4 py-3.5 text-fg outline-none backdrop-blur transition",
           error ? "border-red-400/60" : "border-hair focus:border-gold/50",
           className
         )}

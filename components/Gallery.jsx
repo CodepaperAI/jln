@@ -49,7 +49,7 @@ export default function Gallery({ limit = 6 }) {
               />
               <div className="absolute inset-0 bg-base/40 opacity-0 backdrop-blur-[1px] transition group-hover:opacity-100" />
               <span className="absolute inset-0 grid place-items-center opacity-0 transition group-hover:opacity-100">
-                <span className="grid h-11 w-11 place-items-center rounded-full bg-gold/90 text-base">
+                <span className="grid h-11 w-11 place-items-center rounded-full bg-gold/90 text-ink">
                   <FiMaximize2 />
                 </span>
               </span>

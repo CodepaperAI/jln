@@ -27,7 +27,7 @@ export const testimonialData = [
     rating: 5,
     photo: "/images/avatar-3.jpg",
     quote:
-      "Looks like a showroom now. Worth every dollar — Leo's attention to detail on the prep really shows.",
+      "Looks like a showroom now. Worth every dollar — the JLN team's attention to detail on the prep really shows.",
   },
   {
     id: 4,

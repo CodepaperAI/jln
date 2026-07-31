@@ -1,7 +1,7 @@
 export const faqData = [
   {
     q: "How much does epoxy flooring cost in Ontario?",
-    a: "The cost depends on the size of the floor, concrete condition, coating system, design finish, and preparation required. A garage with cracks, moisture concerns, or heavy repairs will be priced differently than a clean, ready surface. JNL Epoxy provides project-specific estimates after understanding the space.",
+    a: "The cost depends on the size of the floor, concrete condition, coating system, design finish, and preparation required. A garage with cracks, moisture concerns, or heavy repairs will be priced differently than a clean, ready surface. JLN Epoxy provides project-specific estimates after understanding the space.",
   },
   {
     q: "How long does installation take?",
@@ -17,6 +17,6 @@ export const faqData = [
   },
   {
     q: "Do you handle both residential and commercial projects?",
-    a: "Yes. JNL Epoxy installs floors for homeowners and businesses across Ontario, including garages, basements, warehouses, retail units, showrooms, and offices.",
+    a: "Yes. JLN Epoxy installs floors for homeowners and businesses across Ontario, including garages, basements, warehouses, retail units, showrooms, and offices.",
   },
 ];

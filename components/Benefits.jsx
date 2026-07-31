@@ -12,7 +12,7 @@ export default function Benefits() {
     <section className="section-pad bg-surface/30">
       <Container className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
         <FadeLeft>
-          <Heading as="h2" highlight="Beautiful Floor" className="text-2xl text-white sm:text-3xl lg:text-4xl">
+          <Heading as="h2" highlight="Beautiful Floor" className="text-2xl text-fg sm:text-3xl lg:text-4xl">
             More Than a Beautiful Floor
           </Heading>
           <p className="mt-4 text-sm leading-relaxed text-muted">
@@ -36,10 +36,10 @@ export default function Benefits() {
                 variants={fadeUp}
                 className="group rounded-xl2 glass p-6 shadow-luxe transition hover:border-gold/30 hover:shadow-gold-soft"
               >
-                <span className="mb-5 grid h-12 w-12 place-items-center rounded-xl border border-gold/25 bg-gold/10 text-gold transition group-hover:bg-gold group-hover:text-base">
+                <span className="mb-5 grid h-12 w-12 place-items-center rounded-xl border border-gold/25 bg-gold/10 text-gold transition group-hover:bg-gold group-hover:text-ink">
                   <Icon size={20} />
                 </span>
-                <h3 className="font-display text-lg font-bold text-white">{item.title}</h3>
+                <h3 className="font-display text-lg font-bold text-fg">{item.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted">{item.description}</p>
               </motion.div>
             );

@@ -23,7 +23,7 @@ export default function ContactPage() {
     <Layout>
       <Seo
         title="Contact"
-        description="Request a free epoxy flooring quote in Ontario. Response within 24 hours."
+        description="Request a free epoxy flooring quote in Ontario."
         path="/contact"
         jsonLd={breadcrumbSchema([
           { name: "Home", path: "/" },
@@ -31,17 +31,17 @@ export default function ContactPage() {
         ])}
       />
       <PageHeader
-        title="Request a Free Quote"
-        highlight="Free Quote"
-        subtitle="Tell us about your floor and Leo's team will get back to you with a clear next step — usually within 24 hours."
+        title="Contact Us"
+        highlight="Contact Us"
+        subtitle="Tell us about your floor and the JLN team will get back to you with a clear next step."
         crumbs={[{ name: "Contact", path: "/contact" }]}
       />
 
       <section className="section-pad pt-6">
         <Container className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
           <FadeLeft className="flex flex-col gap-6">
-            <Badge>Response within 24 hours</Badge>
-            <p className="text-base leading-relaxed text-muted">
+       
+            <p className="text-[1rem] leading-relaxed text-muted">
               Prefer to talk it through? Call or message us directly — we&apos;re happy to
               walk you through options, timelines, and finishes for your space.
             </p>
@@ -55,7 +55,7 @@ export default function ContactPage() {
                     </span>
                     <span>
                       <span className="block text-xs uppercase tracking-wide text-muted">{d.label}</span>
-                      <span className="block font-medium text-white">{d.value}</span>
+                      <span className="block font-medium text-fg">{d.value}</span>
                     </span>
                   </div>
                 );

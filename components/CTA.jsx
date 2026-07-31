@@ -18,30 +18,25 @@ export default function CTA() {
 
             <div className="relative flex flex-col gap-6 p-8 sm:p-10 lg:flex-row lg:items-center lg:justify-between lg:p-14">
               <div className="max-w-xl">
-                <Heading as="h2" highlight="Transform" className="text-2xl text-white sm:text-3xl lg:text-4xl">
+                <Heading as="h2" highlight="Transform" className="text-2xl text-fg sm:text-3xl lg:text-4xl">
                   Ready to Transform Your Floor?
                 </Heading>
-                <p className="mt-3 text-base text-muted">
+                <p className="mt-3 text-[1rem] text-muted">
                   Book your free estimate this week. No hidden charges. No obligation.
                 </p>
               </div>
               <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center lg:flex-col lg:items-end">
                 <Button href="/contact" size="lg">
-                  Get Free Quote
+                  Contact Us
                 </Button>
-                <a
-                  href={site.phoneHref}
-                  className="inline-flex items-center gap-2 text-lg font-semibold text-white transition hover:text-gold"
-                >
-                  <FiPhone className="text-gold" /> {site.phoneDisplay}
-                </a>
-
-                <a
-                  href={site.phoneHref2}
-                  className="inline-flex items-center gap-2 text-lg font-semibold text-white transition hover:text-gold"
-                >
-                  <FiPhone className="text-gold" /> {site.phoneDisplay2}
-                </a>
+                <div className="flex flex-col gap-2 lg:items-end">
+                  <a href={site.phoneHref} className="inline-flex items-center gap-2 text-lg font-semibold text-fg transition hover:text-gold">
+                    <FiPhone className="text-gold" /> {site.phoneDisplay}
+                  </a>
+                  <a href={site.phoneHref2} className="inline-flex items-center gap-2 text-lg font-semibold text-fg transition hover:text-gold">
+                    <FiPhone className="text-gold" /> {site.phoneDisplay2}
+                  </a>
+                </div>
               </div>
             </div>
           </div>

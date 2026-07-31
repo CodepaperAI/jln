@@ -58,7 +58,6 @@ export default function ServiceDetailPage({ service }) {
       <ServiceHero
         title={service.title}
         subtitle={service.hero.subtitle}
-        image={service.hero.image}
         chips={service.hero.chips}
       />
 

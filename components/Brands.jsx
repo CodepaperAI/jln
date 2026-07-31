@@ -1,11 +1,9 @@
-import { motion } from "framer-motion";
 import Container from "@/components/layout/Container";
 import SectionTitle from "@/components/ui/SectionTitle";
-import Stagger from "@/components/animations/Stagger";
-import { scaleIn } from "@/lib/motion";
+import BrandTile from "@/components/ui/BrandTile";
 import { brands, distributor } from "@/data/brandsData";
 
-// "Materials & Brands We Use" — trust/quality signal (also good for SEO/E-E-A-T).
+// "Materials & Brands We Use" — logo grid (trust / E-E-A-T signal).
 export default function Brands() {
   return (
     <section id="brands" className="section-pad">
@@ -17,21 +15,14 @@ export default function Brands() {
           subtitle="We build every floor with professional-grade concrete, coating, and flooring products from industry-leading manufacturers."
         />
 
-        <Stagger className="mx-auto mt-10 flex max-w-4xl flex-wrap justify-center gap-3">
+        <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
           {brands.map((b) => (
-            <motion.span
-              key={b}
-              variants={scaleIn}
-              className="rounded-full border border-hair bg-surface/50 px-4 py-2 text-sm font-medium text-white/85 transition hover:border-gold/40 hover:text-gold"
-            >
-              {b}
-            </motion.span>
+            <BrandTile key={b.name} name={b.name} logo={b.logo} />
           ))}
-        </Stagger>
+        </div>
 
         <p className="mx-auto mt-8 max-w-2xl text-center text-sm text-muted">
-          Materials supplied through{" "}
-          <span className="font-semibold text-gold">{distributor}</span>.
+          Materials supplied through <span className="font-semibold text-gold">{distributor}</span>.
         </p>
       </Container>
     </section>

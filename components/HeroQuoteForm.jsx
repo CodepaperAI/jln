@@ -43,7 +43,7 @@ export default function HeroQuoteForm() {
   };
 
   const field =
-    "w-full rounded-xl border bg-white/[0.06] px-4 py-3.5 text-white placeholder-muted/70 outline-none backdrop-blur transition";
+    "w-full rounded-xl border bg-white/[0.06] px-4 py-3.5 text-fg placeholder-muted/70 outline-none backdrop-blur transition";
 
   return (
     <div className="w-full rounded-xl3 border border-gold/20 bg-[#10151D]/95 p-5 shadow-[0_30px_80px_-20px_rgba(0,0,0,0.9)] backdrop-blur-2xl sm:p-6">
@@ -63,7 +63,7 @@ export default function HeroQuoteForm() {
             >
               <FiCheckCircle size={34} />
             </motion.span>
-            <h3 className="font-display text-2xl font-bold text-white">Request received</h3>
+            <h3 className="font-display text-2xl font-bold text-fg">Request received</h3>
             <p className="max-w-xs text-sm text-muted">
               Thanks — {site.owner}&apos;s team will get back to you within 24 hours.
             </p>
@@ -80,10 +80,10 @@ export default function HeroQuoteForm() {
             animate={{ opacity: 1 }}
             className="flex flex-col gap-4"
           >
-            <Badge className="self-start">Response within 24 hours</Badge>
+          
 
             <div>
-              <h2 className="font-display text-xl font-bold text-white">Request a Free Quote</h2>
+              <h2 className="font-display text-xl font-bold text-fg">Contact Us</h2>
               <p className="mt-2 text-sm leading-relaxed text-muted">
                 Tell us about your floor and {site.owner}&apos;s team will get back to you with a
                 clear next step.

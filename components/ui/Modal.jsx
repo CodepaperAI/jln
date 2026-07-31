@@ -32,7 +32,7 @@ export default function Modal({ open, onClose, title, children }) {
             >
               <FiX size={20} />
             </button>
-            {title && <h3 className="mb-4 font-display text-2xl font-bold text-white">{title}</h3>}
+            {title && <h3 className="mb-4 font-display text-2xl font-bold text-fg">{title}</h3>}
             {children}
           </motion.div>
         </motion.div>

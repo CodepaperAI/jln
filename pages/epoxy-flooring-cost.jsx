@@ -34,7 +34,7 @@ const costFaqs = [
   { q: "How much does epoxy flooring cost in Ontario?", a: "Most residential epoxy floors in Ontario land between $4 and $15 per square foot installed, depending on the coating system, concrete condition, and preparation required. A clean, ready 2-car garage typically runs $2,400–$4,500, while a designer metallic floor costs more per square foot." },
   { q: "Why is proper preparation worth paying for?", a: "Most epoxy failures come from poor surface prep. Diamond grinding, crack repair, and cleaning cost more upfront than a quick acid etch, but they let the coating bond correctly so the floor lasts for years instead of peeling." },
   { q: "Is epoxy cheaper than tile or new concrete?", a: "Usually yes. Epoxy coats your existing concrete instead of replacing it, so it is typically less expensive than tiling or pouring a new slab, while adding durability and a premium look." },
-  { q: "Do you provide a firm quote?", a: "Yes. JNL Epoxy provides project-specific estimates after understanding your space — size, concrete condition, and the finish you want. Contact us for a free, no-obligation quote." },
+  { q: "Do you provide a firm quote?", a: "Yes. JLN Epoxy provides project-specific estimates after understanding your space — size, concrete condition, and the finish you want. Contact us for a free, no-obligation quote." },
 ];
 
 export default function EpoxyFlooringCost() {
@@ -69,7 +69,7 @@ export default function EpoxyFlooringCost() {
       <section className="section-pad pt-6">
         <Container>
           <FadeUp className="max-w-3xl">
-            <p className="text-base leading-relaxed text-white/80">
+            <p className="text-[1rem] leading-relaxed text-fg/80">
               Epoxy flooring is one of the most cost-effective ways to upgrade concrete. Instead of
               replacing the slab, a properly prepared and sealed coating protects it, reduces
               dusting, and delivers a premium finish. Below are realistic 2026 price ranges for the
@@ -80,10 +80,10 @@ export default function EpoxyFlooringCost() {
 
           {/* Price by system */}
           <FadeUp className="mt-12">
-            <h2 className="font-display text-2xl font-bold text-white sm:text-3xl">Price by Coating System</h2>
+            <h2 className="font-display text-2xl font-bold text-fg sm:text-3xl">Price by Coating System</h2>
             <div className="mt-6 overflow-hidden rounded-xl2 border border-hair">
               <table className="w-full text-left text-sm">
-                <thead className="bg-white/[0.04] text-white/70">
+                <thead className="bg-white/[0.04] text-fg/70">
                   <tr>
                     <th className="p-4 font-semibold">System</th>
                     <th className="p-4 font-semibold">Typical installed cost</th>
@@ -93,9 +93,9 @@ export default function EpoxyFlooringCost() {
                 <tbody>
                   {systems.map((r) => (
                     <tr key={r.name} className="border-t border-hair">
-                      <td className="p-4 font-medium text-white">{r.name}</td>
+                      <td className="p-4 font-medium text-fg">{r.name}</td>
                       <td className="p-4 text-gold">{r.range}</td>
-                      <td className="hidden p-4 text-white/70 sm:table-cell">{r.note}</td>
+                      <td className="hidden p-4 text-fg/70 sm:table-cell">{r.note}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -105,11 +105,11 @@ export default function EpoxyFlooringCost() {
 
           {/* Price by size */}
           <FadeUp className="mt-12">
-            <h2 className="font-display text-2xl font-bold text-white sm:text-3xl">Typical Cost by Space</h2>
+            <h2 className="font-display text-2xl font-bold text-fg sm:text-3xl">Typical Cost by Space</h2>
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
               {bySize.map((r) => (
                 <div key={r.space} className="flex items-center justify-between rounded-xl2 glass p-5">
-                  <span className="text-white/85">{r.space}</span>
+                  <span className="text-fg/85">{r.space}</span>
                   <span className="font-display font-bold text-gold">{r.range}</span>
                 </div>
               ))}
@@ -118,10 +118,10 @@ export default function EpoxyFlooringCost() {
 
           {/* Factors */}
           <FadeUp className="mt-12 max-w-3xl">
-            <h2 className="font-display text-2xl font-bold text-white sm:text-3xl">What Affects the Price</h2>
+            <h2 className="font-display text-2xl font-bold text-fg sm:text-3xl">What Affects the Price</h2>
             <ul className="mt-6 flex flex-col gap-3">
               {factors.map((f) => (
-                <li key={f} className="flex items-start gap-3 text-white/80">
+                <li key={f} className="flex items-start gap-3 text-fg/80">
                   <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-gold" />
                   <span>{f}</span>
                 </li>
@@ -133,12 +133,12 @@ export default function EpoxyFlooringCost() {
 
       <section className="section-pad">
         <Container className="max-w-3xl">
-          <h2 className="font-display text-2xl font-bold text-white sm:text-3xl">Cost FAQs</h2>
+          <h2 className="font-display text-2xl font-bold text-fg sm:text-3xl">Cost FAQs</h2>
           <div className="mt-6 flex flex-col gap-4">
             {costFaqs.map((f) => (
               <div key={f.q} className="rounded-xl2 glass p-6">
-                <h3 className="font-display font-semibold text-white">{f.q}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-white/70">{f.a}</p>
+                <h3 className="font-display font-semibold text-fg">{f.q}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-fg/70">{f.a}</p>
               </div>
             ))}
           </div>

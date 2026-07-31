@@ -22,14 +22,14 @@ export default function RelatedServices({ currentSlug, limit = 3 }) {
           highlight="Flooring Services"
         />
 
-        <Stagger className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <Stagger className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {others.map((service) => (
             <motion.article
               key={service.slug}
               variants={fadeUp}
               className="group overflow-hidden rounded-xl2 glass shadow-luxe transition hover:border-gold/30 hover:shadow-gold-soft"
             >
-              <div className="relative aspect-[16/10] overflow-hidden">
+              <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
                   src={service.image}
                   alt={service.title}
@@ -40,7 +40,7 @@ export default function RelatedServices({ currentSlug, limit = 3 }) {
                 <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
               </div>
               <div className="p-6">
-                <h3 className="font-display text-lg font-bold text-white">{service.title}</h3>
+                <h3 className="font-display text-lg font-bold text-fg">{service.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted">{service.excerpt}</p>
                 <Link
                   href={serviceHref(service.slug)}

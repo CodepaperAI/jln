@@ -24,12 +24,11 @@ export default function PageHeader({ title, highlight, subtitle, crumbs = [] }) 
               ))}
             </ol>
           </nav>
-          <Heading as="h1" highlight={highlight} className="text-3xl text-white sm:text-4xl">
+          <Heading as="h1" highlight={highlight} className="text-3xl text-fg sm:text-4xl">
             {title}
           </Heading>
           {subtitle && (
-            <p className="mt-4 text-sm leading-relaxed text-gold sm:text-[15px]">{subtitle}</p>
-          )}
+<p className="mt-4 text-sm leading-relaxed text-fg/80 sm:text-[15px]">{subtitle}</p>          )}
         </FadeUp>
       </Container>
     </section>

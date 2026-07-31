@@ -20,7 +20,7 @@ export default function ServiceAreas() {
             <motion.span
               key={area}
               variants={scaleIn}
-              className="rounded-full border border-hair bg-surface/50 px-5 py-2.5 text-sm font-medium text-white/85 transition hover:border-gold/40 hover:text-gold"
+              className="rounded-full border border-hair bg-surface/50 px-5 py-2.5 text-sm font-medium text-fg/85 transition hover:border-gold/40 hover:text-gold"
             >
               {area}
             </motion.span>

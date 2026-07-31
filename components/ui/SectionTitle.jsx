@@ -23,10 +23,10 @@ export default function SectionTitle({
           <span className="h-px w-8 bg-gold/60" aria-hidden />
         </div>
       )}
-      <Heading as="h2" highlight={highlight} className="text-2xl text-white sm:text-3xl lg:text-4xl">
+      <Heading as="h2" highlight={highlight} className="text-2xl text-fg sm:text-3xl lg:text-4xl">
         {title}
       </Heading>
-      {subtitle && <p className="text-sm leading-relaxed text-white/70 sm:text-[15px]">{subtitle}</p>}
+      {subtitle && <p className="text-sm leading-relaxed text-fg/70 sm:text-[15px]">{subtitle}</p>}
     </FadeUp>
   );
 }

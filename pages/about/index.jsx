@@ -25,7 +25,7 @@ export default function AboutPage() {
     <Layout>
       <Seo
         title="About"
-        description="JNL Epoxy is an Ontario-based epoxy flooring company led by Leo, with 5 years of hands-on experience."
+        description="JLN Epoxy is an Ontario-based epoxy flooring company led by the JLN team, with 3+ years of hands-on experience."
         path="/about"
         jsonLd={breadcrumbSchema([
           { name: "Home", path: "/" },
@@ -33,8 +33,8 @@ export default function AboutPage() {
         ])}
       />
       <PageHeader
-        title="About JNL Epoxy"
-        highlight="JNL Epoxy"
+        title="About JLN Epoxy"
+        highlight="JLN Epoxy"
         subtitle="An Ontario-based epoxy flooring company built on preparation, quality materials, and owner-led attention to detail."
         crumbs={[{ name: "About", path: "/about" }]}
       />
@@ -42,22 +42,24 @@ export default function AboutPage() {
       <section className="section-pad">
         <Container className="grid gap-12 lg:grid-cols-2 lg:items-center">
           <FadeLeft>
-  <Image
-    src="/images/logo.png"
-    alt={`${site.name} logo`}
-    width={520}
-    height={520}
-    sizes="(max-width:1024px) 80vw, 45vw"
-    className="mx-auto h-auto w-full max-w-[460px] object-contain drop-shadow-[0_10px_40px_rgba(0,0,0,0.6)]"
-    priority
-  />
-</FadeLeft>
+            <div className="relative mx-auto flex aspect-square w-full max-w-xs items-center justify-center overflow-hidden rounded-xl2 border border-white/10 bg-gradient-to-br from-[#0B1F33] via-[#0A1626] to-[#08111d] shadow-luxe lg:mx-0">
+              <div className="pointer-events-none absolute h-40 w-40 rounded-full bg-gold/15 blur-[70px]" />
+              <Image
+                src="/images/logo.png"
+                alt="JLN Epoxy logo"
+                width={230}
+                height={230}
+                className="relative object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.55)]"
+                priority
+              />
+            </div>
+          </FadeLeft>
           <FadeRight>
             <h2 className="font-display text-3xl font-bold sm:text-4xl">
               Owner-led craft, <span className="hl">start to finish</span>
             </h2>
-            <p className="mt-5 text-base leading-relaxed text-muted">
-              JNL Epoxy is led by {site.owner}, who brings over 5 years of hands-on
+            <p className="mt-5 text-[1rem] leading-relaxed text-muted">
+              JLN Epoxy is led by the JLN team, who brings over 3 years of hands-on
               experience in residential and commercial flooring. Our focus is simple:
               proper surface preparation, quality materials, clean workmanship, and floors
               that look impressive while standing up to everyday use.
@@ -68,7 +70,7 @@ export default function AboutPage() {
                   <span className="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-gold/15 text-gold">
                     <FiCheck size={14} />
                   </span>
-                  <span className="text-white/85">{p}</span>
+                  <span className="text-fg/85">{p}</span>
                 </li>
               ))}
             </ul>

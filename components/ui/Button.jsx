@@ -7,19 +7,19 @@ const base =
 
 const sizes = {
   sm: "px-5 py-2.5 text-sm",
-  md: "px-7 py-3.5 text-sm md:text-base",
-  lg: "px-9 py-4 text-base",
+  md: "px-7 py-3.5 text-sm md:text-[1rem]",
+  lg: "px-9 py-4 text-[1rem]",
 };
 
 const variants = {
   // Gold fill with hover glow
   primary:
-    "bg-gradient-to-b from-gold-soft to-gold text-base shadow-gold-soft hover:shadow-gold-glow",
+    "bg-gradient-to-b from-gold-soft to-gold text-ink shadow-gold-soft hover:shadow-gold-glow",
   // Glass outline
-  secondary: "glass text-white border-hair hover:border-gold/40 hover:text-gold-soft",
+  secondary: "glass text-fg border-hair hover:border-gold/40 hover:text-gold-soft",
   // Solid dark (kept for API compatibility)
-  dark: "bg-white/[0.06] text-white border border-hair hover:border-gold/40 hover:text-gold-soft",
-  ghost: "text-white/90 hover:text-gold-soft",
+  dark: "bg-white/[0.06] text-fg border border-hair hover:border-gold/40 hover:text-gold-soft",
+  ghost: "text-fg/90 hover:text-gold-soft",
 };
 
 export default function Button({

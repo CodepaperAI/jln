@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { cn } from "@/utils/cn";
 
-// Uses the uploaded JNL Epoxy brand mark.
+// Uses the uploaded JLN Epoxy brand mark.
 export default function Logo({ className = "", href = "/", size = 44 }) {
   return (
     <Link
@@ -23,8 +23,8 @@ export default function Logo({ className = "", href = "/", size = 44 }) {
           priority
         />
       </span>
-      <span className="font-display text-base font-extrabold tracking-tight sm:text-lg">
-        <span className="text-white">JLN</span> <span className="hl">EPOXY</span>
+      <span className="font-display text-[1rem] font-extrabold tracking-tight sm:text-lg">
+        <span className="text-fg">JLN</span> <span className="hl">EPOXY</span>
       </span>
     </Link>
   );

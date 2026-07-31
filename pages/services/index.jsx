@@ -60,7 +60,7 @@ export default function ServicesPage() {
                     )}
                   </div>
                   <div className="flex flex-1 flex-col p-6">
-                    <h3 className="font-display text-lg font-bold text-white">{service.title}</h3>
+                    <h3 className="font-display text-lg font-bold text-fg">{service.title}</h3>
                     <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">{service.excerpt}</p>
                     <Link
                       href={serviceHref(service.slug)}

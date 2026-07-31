@@ -35,7 +35,7 @@ export default function ServiceFAQ({ faqs = [] }) {
                   aria-expanded={isOpen}
                   className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
                 >
-                  <span className="font-display font-semibold text-white">{item.q}</span>
+                  <span className="font-display font-semibold text-fg">{item.q}</span>
                   <motion.span animate={{ rotate: isOpen ? 180 : 0 }} className="text-gold">
                     <FiChevronDown size={20} />
                   </motion.span>

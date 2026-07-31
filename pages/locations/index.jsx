@@ -19,7 +19,7 @@ export default function LocationsHub() {
     <Layout>
       <Seo
         title="Epoxy Flooring Service Areas Across the GTA"
-        description="JNL Epoxy installs epoxy flooring across the Greater Toronto Area — Toronto, Mississauga, Brampton, Vaughan, Hamilton, Oakville, and more. Find your city."
+        description="JLN Epoxy installs epoxy flooring across the Greater Toronto Area — Toronto, Mississauga, Brampton, Vaughan, Hamilton, Oakville, and more. Find your city."
         path="/locations"
         jsonLd={jsonLd}
       />
@@ -43,7 +43,7 @@ export default function LocationsHub() {
                   <span className="grid h-10 w-10 place-items-center rounded-full border border-gold/25 bg-gold/10 text-gold">
                     <FiMapPin size={16} />
                   </span>
-                  <span className="font-display text-lg font-bold text-white">
+                  <span className="font-display text-lg font-bold text-fg">
                     Epoxy Flooring {l.city}
                   </span>
                 </span>

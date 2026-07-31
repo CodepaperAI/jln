@@ -1,6 +1,6 @@
 import { FiTool, FiUserCheck, FiAward } from "react-icons/fi";
 
-// "Why Choose JNL Epoxy?" — the three trust pillars.
+// "Why Choose JLN Epoxy?" — the three trust pillars.
 export const whyChooseData = [
   {
     title: "Proper Surface Preparation",
@@ -11,7 +11,7 @@ export const whyChooseData = [
   {
     title: "Owner-Supervised Projects",
     description:
-      "Leo brings  years of hands-on experience and personally focuses on quality.",
+      "The JLN team brings 3+ years of hands-on experience and personally focuses on quality.",
     icon: FiUserCheck,
   },
   {

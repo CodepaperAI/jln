@@ -21,7 +21,7 @@ export default function ServiceBestUses({ heading, subtitle, items = [] }) {
                 className="mb-5 block h-0.5 w-10 rounded-full bg-gold transition-all group-hover:w-16"
                 aria-hidden
               />
-              <h3 className="font-display text-lg font-bold text-white">{item.title}</h3>
+              <h3 className="font-display text-lg font-bold text-fg">{item.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-muted">{item.description}</p>
             </motion.div>
           ))}

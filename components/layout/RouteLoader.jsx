@@ -5,12 +5,13 @@ import Image from "next/image";
 
 export default function RouteLoader({ minDuration = 2200 }) {
   const router = useRouter();
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true); // show on first load / refresh
 
   // Show the loader the moment a navigation starts.
   useEffect(() => {
     const handleStart = (url) => {
-      if (url === router.asPath) return; // ignore same-page / hash changes
+      // ignore hash-only / same-page changes
+      if (url === router.asPath) return;
       setLoading(true);
     };
     router.events.on("routeChangeStart", handleStart);
@@ -55,7 +56,7 @@ export default function RouteLoader({ minDuration = 2200 }) {
               animate={{ opacity: [0.5, 1, 0.5] }}
               transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
             >
-              <span className="text-white">JLN</span> <span className="hl">EPOXY</span>
+              <span className="text-fg">JLN</span> <span className="hl">EPOXY</span>
             </motion.p>
           </div>
         </motion.div>

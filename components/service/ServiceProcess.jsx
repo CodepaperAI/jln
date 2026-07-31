@@ -20,10 +20,10 @@ export default function ServiceProcess({ heading, subtitle, steps = [] }) {
             </span>
             <span className="h-px w-8 bg-gold/60" aria-hidden />
           </div>
-          <h2 className="font-display text-2xl font-extrabold tracking-tight text-white sm:text-3xl lg:text-4xl">
+          <h2 className="font-display text-2xl font-extrabold tracking-tight text-fg sm:text-3xl lg:text-4xl">
             {heading}
           </h2>
-          <p className="text-base leading-relaxed text-muted sm:text-lg">{subtitle}</p>
+          <p className="text-[1rem] leading-relaxed text-muted sm:text-lg">{subtitle}</p>
         </FadeUp>
 
         <Stagger className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -33,10 +33,10 @@ export default function ServiceProcess({ heading, subtitle, steps = [] }) {
               variants={fadeUp}
               className="group rounded-xl2 glass p-7 shadow-luxe transition hover:-translate-y-1.5 hover:border-gold/30 hover:shadow-gold-soft"
             >
-              <span className="grid h-10 w-10 place-items-center rounded-full border border-gold/30 bg-gold/10 font-display text-sm font-bold text-gold transition group-hover:bg-gold group-hover:text-base">
+              <span className="grid h-10 w-10 place-items-center rounded-full border border-gold/30 bg-gold/10 font-display text-sm font-bold text-gold transition group-hover:bg-gold group-hover:text-ink">
                 {i + 1}
               </span>
-              <h3 className="mt-5 font-display text-lg font-bold text-white">{step.title}</h3>
+              <h3 className="mt-5 font-display text-lg font-bold text-fg">{step.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-muted">{step.description}</p>
             </motion.div>
           ))}

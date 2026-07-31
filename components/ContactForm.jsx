@@ -68,7 +68,7 @@ export default function ContactForm() {
             >
               <FiCheckCircle size={34} />
             </motion.div>
-            <h3 className="font-display text-2xl font-bold text-white">Request received</h3>
+            <h3 className="font-display text-2xl font-bold text-fg">Request received</h3>
             <p className="max-w-sm text-sm text-muted">
               Thanks — we&apos;ll get back to you within 24 hours with a clear next step.
             </p>

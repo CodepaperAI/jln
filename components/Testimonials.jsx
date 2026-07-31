@@ -16,7 +16,7 @@ export default function Testimonials() {
           eyebrow="Client Reviews"
           title="Trusted Across Ontario"
           highlight="Ontario"
-          subtitle="Homeowners and businesses choose JNL Epoxy for clean workmanship and floors that hold up."
+          subtitle="Homeowners and businesses choose JLN Epoxy for clean workmanship and floors that hold up."
         />
 
         <div className="mt-14">
@@ -37,7 +37,7 @@ export default function Testimonials() {
                       <FiStar key={i} className="fill-gold" size={18} />
                     ))}
                   </div>
-                  <blockquote className="flex-1 text-base leading-relaxed text-white/90">
+                  <blockquote className="flex-1 text-[1rem] leading-relaxed text-fg/90">
                     “{t.quote}”
                   </blockquote>
                   <figcaption className="mt-6 flex items-center gap-4 border-t border-hair pt-6">
@@ -45,7 +45,7 @@ export default function Testimonials() {
                       <Image src={t.photo} alt={t.name} fill sizes="48px" className="object-cover" />
                     </span>
                     <span>
-                      <span className="block font-semibold text-white">{t.name}</span>
+                      <span className="block font-semibold text-fg">{t.name}</span>
                       <span className="block text-xs text-muted">{t.role} · {t.location}</span>
                     </span>
                   </figcaption>
