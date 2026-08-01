@@ -7,8 +7,8 @@ const pairs = [
   {
     id: "pair-a",
     title: "Project 1",
-    before: "/videos/showcase-1.mp4", // video 1
-    after: "/videos/showcase-2.mp4",         // video 3
+    before: "/videos/showcase-2.mp4", // video 1
+    after: "/videos/showcase-1.mp4",         // video 3
   },
   {
     id: "pair-b",

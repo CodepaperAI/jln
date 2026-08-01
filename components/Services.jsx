@@ -30,12 +30,13 @@ export default function Services() {
             >
               <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
-                  src={service.image}
-                  alt={service.title}
-                  fill
-                  sizes="(max-width:768px) 100vw, (max-width:1280px) 33vw, 20vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
-                />
+  src={service.image}
+  alt={service.title}
+  fill
+  unoptimized
+  sizes="(max-width:768px) 100vw, (max-width:1280px) 33vw, 20vw"
+  className="object-cover transition-transform duration-700 group-hover:scale-110"
+/>
                 <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
                 {service.badge && (
                   <div className="absolute left-4 top-4">

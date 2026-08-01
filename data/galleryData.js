@@ -8,7 +8,7 @@ export const galleryData = [
   { id: 6, src: "/images/gallery-5.jpg", alt: "Decorative flake-coated curved concrete steps", category: "flake", tall: true },
   { id: 7, src: "/images/gallery-6.jpg", alt: "Close-up of flake-coated front steps", category: "flake", tall: false },
   { id: 8, src: "/images/ba-steps1-after.jpg", alt: "Resurfaced front steps with flake finish", category: "flake", tall: false },
-  { id: 9, src: "/images/service-commercial.jpg", alt: "Commercial epoxy floor in a large workspace", category: "commercial", tall: true },
+  { id: 9, src: "/images/service-commercial.jpg", alt: "Commercial epoxy floor in a large workspace", category: "garage", tall: true },
   { id: 10, src: "/images/service-metallic.jpg", alt: "Metallic epoxy floor with marble-style finish", category: "metallic", tall: false },
 ];
 
