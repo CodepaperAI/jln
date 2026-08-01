@@ -27,7 +27,7 @@ export const serviceDetails = {
     },
     intro: {
       heading: "Flake Epoxy Flooring for Garages & Basements",
-      image: "https://images.unsplash.com/photo-1652305461546-bf0a76934433?auto=format&fit=crop&w=1200&q=80",
+      image: "https://images.unsplash.com/photo-1652305461546-bf0a76934433?fm=jpg&fit=crop&w=1200&q=80",
       imageAlt: "Flake epoxy garage floor with a glossy speckled finish",
       paragraphs: [
         "Flake epoxy is one of the most popular flooring systems for Ontario homeowners because it combines durability with a clean decorative look. Vinyl flakes help hide minor imperfections, add texture, and create a premium finish that works especially well in garages and utility spaces.",
@@ -128,7 +128,7 @@ export const serviceDetails = {
     },
     intro: {
       heading: "Metallic Epoxy for Premium Design Spaces",
-      image: "https://images.unsplash.com/photo-1523251836828-b75d28b89804?auto=format&fit=crop&w=1200&q=80",
+      image: "https://images.unsplash.com/photo-1523251836828-b75d28b89804?fm=jpg&fit=crop&w=1200&q=80",
       imageAlt: "Marble-style metallic epoxy floor with black, white, and gold movement",
       paragraphs: [
         "Metallic epoxy creates a unique, high-gloss floor with depth, movement, and a marble-like visual effect. No two metallic floors look exactly the same, making it ideal for customers who want a distinctive premium finish.",
@@ -180,7 +180,7 @@ export const serviceDetails = {
     },
     intro: {
       heading: "Commercial Epoxy Built for Workspaces",
-      image: "https://images.unsplash.com/photo-1772300164438-f73307d3b645?auto=format&fit=crop&w=1200&q=80",
+      image: "https://images.unsplash.com/photo-1772300164438-f73307d3b645?fm=jpg&fit=crop&w=1200&q=80",
       imageAlt: "Commercial solid epoxy floor in a large workspace",
       paragraphs: [
         "Commercial solid epoxy is designed for practical performance. It creates a seamless, cleanable, and durable surface for spaces exposed to foot traffic, carts, equipment, spills, and daily operations.",
@@ -232,7 +232,7 @@ export const serviceDetails = {
     },
     intro: {
       heading: "Polished Concrete for Clean Modern Spaces",
-      image: "https://images.unsplash.com/photo-1606486827673-4c17dc1a54ac?auto=format&fit=crop&w=1200&q=80",
+      image: "https://images.unsplash.com/photo-1606486827673-4c17dc1a54ac?fm=jpg&fit=crop&w=1200&q=80",
       imageAlt: "Refined polished concrete surface in a modern interior",
       paragraphs: [
         "Concrete polishing is a strong option for customers who want a refined concrete look without a full decorative coating system. It can create a sleek, durable, and low-maintenance surface for commercial and residential spaces.",
@@ -284,7 +284,7 @@ export const serviceDetails = {
     },
     intro: {
       heading: "Garage Epoxy Built for Ontario Winters",
-      image: "https://images.unsplash.com/photo-1611941671018-6c3907cb7a76?auto=format&fit=crop&w=1200&q=80",
+      image: "https://images.unsplash.com/photo-1611941671018-6c3907cb7a76?fm=jpg&fit=crop&w=1200&q=80",
       imageAlt: "Gray flake garage epoxy floor with a clean showroom finish",
       paragraphs: [
         "Garage epoxy turns bare, dusty concrete into a clean, durable surface that stands up to vehicles, tools, and everyday use. Engineered for Ontario conditions, it resists hot-tire pickup, road salt, and chemical spills while staying bright and easy to clean.",
@@ -336,7 +336,7 @@ export const serviceDetails = {
     },
     intro: {
       heading: "Clear Protective Top Coats",
-      image: "https://images.unsplash.com/photo-1664036362129-ca6c57599633?auto=format&fit=crop&w=1200&q=80",
+      image: "https://images.unsplash.com/photo-1664036362129-ca6c57599633?fm=jpg&fit=crop&w=1200&q=80",
       imageAlt: "Glossy clear-coated epoxy floor",
       paragraphs: [
         "A clear top coat is the final layer that protects your floor and locks in the finish. It boosts gloss, seals the surface against stains, and makes day-to-day cleaning far easier.",
@@ -388,7 +388,7 @@ export const serviceDetails = {
     },
     intro: {
       heading: "Two-Layer Coating for Maximum Durability",
-      image: "https://images.unsplash.com/photo-1589708136696-6fb7e82702c6?auto=format&fit=crop&w=1200&q=80",
+      image: "https://images.unsplash.com/photo-1589708136696-6fb7e82702c6?fm=jpg&fit=crop&w=1200&q=80",
       imageAlt: "Thick double-coat flake epoxy garage floor",
       paragraphs: [
         "A double-coat system applies two full coats to build extra thickness and strength. It is ideal for garages, workshops, and commercial floors that take heavy daily use.",
@@ -440,7 +440,7 @@ export const serviceDetails = {
     },
     intro: {
       heading: "Protect Your Exterior Concrete",
-      image: "https://images.unsplash.com/photo-1591899916510-d8eea9eb7b25?auto=format&fit=crop&w=1200&q=80",
+      image: "https://images.unsplash.com/photo-1591899916510-d8eea9eb7b25?fm=jpg&fit=crop&w=1200&q=80",
       imageAlt: "Sealed exterior concrete steps",
       paragraphs: [
         "Ontario winters are hard on exterior concrete. Road salt, moisture, and freeze-thaw cycles cause pitting, cracking, and surface damage over time.",
@@ -492,7 +492,7 @@ export const serviceDetails = {
     },
     intro: {
       heading: "Waterproof Coatings That Protect",
-      image: "https://images.unsplash.com/photo-1603658243406-da93600af91a?auto=format&fit=crop&w=1200&q=80",
+      image: "https://images.unsplash.com/photo-1603658243406-da93600af91a?fm=jpg&fit=crop&w=1200&q=80",
       imageAlt: "Waterproof-coated concrete surface",
       paragraphs: [
         "Moisture is one of the biggest threats to concrete and finished spaces. Waterproof coatings create a protective barrier that keeps water out and surfaces sound.",

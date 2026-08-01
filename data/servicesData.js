@@ -6,7 +6,7 @@ export const servicesData = [
       "Decorative, durable, and slip-resistant floors for garages, basements, and utility areas.",
     description:
       "A multi-layer flake system that blends vinyl chips into the coat for texture, traction, and a clean showroom finish that hides imperfections.",
-    image: "https://images.unsplash.com/photo-1652305461546-bf0a76934433?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1652305461546-bf0a76934433?fm=jpg&fit=crop&w=1200&q=80",
     badge: null,
     features: ["Slip-resistant", "Impact tolerant", "Custom flake blends"],
   },
@@ -17,7 +17,7 @@ export const servicesData = [
       "Luxury high-gloss, marble-style floors for showrooms, interiors, and feature spaces.",
     description:
       "Reflective metallic pigments are worked into the resin to create depth and movement — a true statement floor with a seamless mirror finish.",
-    image: "https://images.unsplash.com/photo-1523251836828-b75d28b89804?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1523251836828-b75d28b89804?fm=jpg&fit=crop&w=1200&q=80",
     badge: "Premium Finish",
     features: ["High-gloss depth", "One-of-a-kind pattern", "Seamless surface"],
   },
@@ -28,7 +28,7 @@ export const servicesData = [
       "Tough coatings that resist tire marks, salt, oil, and daily vehicle traffic.",
     description:
       "Engineered for Ontario winters — resists hot-tire pickup, road salt, and chemical spills while keeping the garage bright and easy to clean.",
-    image: "https://images.unsplash.com/photo-1611941671018-6c3907cb7a76?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1611941671018-6c3907cb7a76?fm=jpg&fit=crop&w=1200&q=80",
     badge: null,
     features: ["Hot-tire resistant", "Salt & chemical proof", "Easy to clean"],
   },
@@ -39,7 +39,7 @@ export const servicesData = [
       "Heavy-duty coating systems for warehouses, shops, and industrial spaces.",
     description:
       "High-build solid epoxy designed for foot traffic, carts, forklifts, and active operations, with low-downtime scheduling for businesses.",
-    image: "https://images.unsplash.com/photo-1772300164438-f73307d3b645?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1772300164438-f73307d3b645?fm=jpg&fit=crop&w=1200&q=80",
     badge: null,
     features: ["Forklift rated", "Low downtime", "USDA-friendly options"],
   },
@@ -50,7 +50,7 @@ export const servicesData = [
       "A sleek, low-maintenance finish that turns dull concrete into a clean modern surface.",
     description:
       "Mechanically ground and densified concrete polished to a refined sheen — no coating required, extremely durable and easy to maintain.",
-    image: "https://images.unsplash.com/photo-1606486827673-4c17dc1a54ac?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1606486827673-4c17dc1a54ac?fm=jpg&fit=crop&w=1200&q=80",
     badge: null,
     features: ["No coating needed", "Dust-proofed", "Refined sheen"],
   },
@@ -61,7 +61,7 @@ export const servicesData = [
       "A protective clear top coat that adds gloss, durability, and easy cleaning to concrete and epoxy floors.",
     description:
       "A high-clarity protective top coat that boosts gloss, seals the surface, and makes floors easier to clean and far more durable.",
-    image: "https://images.unsplash.com/photo-1664036362129-ca6c57599633?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1664036362129-ca6c57599633?fm=jpg&fit=crop&w=1200&q=80",
     badge: null,
     features: ["Adds gloss & protection", "Easy to clean", "Extends floor life"],
   },
@@ -72,7 +72,7 @@ export const servicesData = [
       "A two-layer coating system for maximum thickness, durability, and a premium long-lasting finish.",
     description:
       "Two full coats build extra thickness and strength for high-traffic garages and commercial floors that need to last.",
-    image: "https://images.unsplash.com/photo-1589708136696-6fb7e82702c6?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1589708136696-6fb7e82702c6?fm=jpg&fit=crop&w=1200&q=80",
     badge: null,
     features: ["Extra thickness", "Maximum durability", "High-traffic ready"],
   },
@@ -83,7 +83,7 @@ export const servicesData = [
       "Seal and protect driveways and exterior concrete from water, salt, and freeze-thaw damage.",
     description:
       "Protective sealing for driveways, steps, and exterior concrete that guards against Ontario salt, moisture, and freeze-thaw cycles.",
-    image: "https://images.unsplash.com/photo-1591899916510-d8eea9eb7b25?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1591899916510-d8eea9eb7b25?fm=jpg&fit=crop&w=1200&q=80",
     badge: null,
     features: ["Salt & water resistant", "Freeze-thaw protection", "Exterior grade"],
   },
@@ -94,7 +94,7 @@ export const servicesData = [
       "Protective waterproof coatings for basements, balconies, and concrete exposed to moisture.",
     description:
       "Waterproof coating systems that protect basements, balconies, and concrete surfaces from moisture, leaks, and water damage.",
-    image: "https://images.unsplash.com/photo-1603658243406-da93600af91a?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1603658243406-da93600af91a?fm=jpg&fit=crop&w=1200&q=80",
     badge: null,
     features: ["Moisture barrier", "Basement & balcony", "Long-lasting seal"],
   },
