@@ -40,19 +40,18 @@ export default function ServicesPage() {
 
       <section className="section-pad">
         <Container>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {servicesData.map((service) => (
+<div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+              {servicesData.map((service) => (
               <FadeUp key={service.slug}>
                 <article className="group flex h-full flex-col overflow-hidden rounded-xl2 glass shadow-luxe transition hover:border-gold/30 hover:shadow-gold-soft">
-                  <div className="relative aspect-[16/10] overflow-hidden">
-                    <Image
-                      src={service.image}
-                      alt={service.title}
-                      fill
-                      // sizes="(max-width:768px) 100vw, 33vw"
-                      sizes="(max-width:768px) 100vw, (max-width:1280px) 33vw, 20vw"
-                      className="object-cover transition-transform duration-700 group-hover:scale-110"
-                    />
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                  <Image
+  src={service.image}
+  alt={service.title}
+  fill
+  sizes="(max-width:768px) 100vw, 25vw"
+  className="object-cover transition-transform duration-700 group-hover:scale-110"
+/>
                     <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
                     {service.badge && (
                       <div className="absolute left-4 top-4">
