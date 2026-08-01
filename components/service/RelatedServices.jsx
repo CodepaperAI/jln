@@ -9,7 +9,7 @@ import { fadeUp } from "@/lib/motion";
 import { servicesData } from "@/data/servicesData";
 import { serviceHref } from "@/utils/serviceHref";
 
-export default function RelatedServices({ currentSlug, limit = 3 }) {
+export default function RelatedServices({ currentSlug, limit = 4 }) {
   const others = servicesData.filter((s) => s.slug !== currentSlug).slice(0, limit);
   if (others.length === 0) return null;
 
