@@ -49,7 +49,8 @@ export default function ServicesPage() {
                       src={service.image}
                       alt={service.title}
                       fill
-                      sizes="(max-width:768px) 100vw, 33vw"
+                      // sizes="(max-width:768px) 100vw, 33vw"
+                      sizes="(max-width:768px) 100vw, (max-width:1280px) 33vw, 20vw"
                       className="object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
